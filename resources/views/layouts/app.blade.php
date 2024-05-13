@@ -11,6 +11,10 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com/?plugins=forms"></script>
     <!-- BEGIN: CSS Assets-->
+
+    <!-- font awesom link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    </link>
     <link rel="stylesheet" href="{{asset('assets/dist/css/vendors/litepicker.css')}}">
     <link rel="stylesheet" href="{{asset('assets/dist/css/vendors/tiny-slider.css')}}">
     <link rel="stylesheet" href="{{asset('assets/dist/css/vendors/tippy.css')}}">
