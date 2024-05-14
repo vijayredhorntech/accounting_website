@@ -75,13 +75,13 @@
                     <!-- BEGIN: Second Child -->
                     <ul class="hidden">
                         <li>
-                            <a href="echo-dashboard-overview-2.html" class="side-menu__link ">
+                            <a href="{{route('create-product')}}" class="side-menu__link ">
                                 <i data-tw-merge="" data-lucide="plus" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                                 <div class="side-menu__link__title">Add New Product</div>
                             </a>
                         </li>
                         <li>
-                            <a href="echo-product-grid.html" class="side-menu__link ">
+                            <a href="{{route('product-group')}}" class="side-menu__link ">
                                 <i data-tw-merge="" data-lucide="folder" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                                 <div class="side-menu__link__title">
                                     Product Groups
@@ -89,7 +89,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="echo-product-list.html" class="side-menu__link ">
+                            <a href="{{route('products-list')}}" class="side-menu__link ">
                                 <i data-tw-merge="" data-lucide="shopping-cart" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                                 <div class="side-menu__link__title">
                                     Products
@@ -97,10 +97,10 @@
                             </a>
                         </li>
                         <li>
-                            <a href="echo-product-list.html" class="side-menu__link ">
+                            <a href="{{route('godown')}}" class="side-menu__link ">
                                 <i data-tw-merge="" data-lucide="database" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                                 <div class="side-menu__link__title">
-                                    Stock
+                                    Gowdowns
                                 </div>
                             </a>
                         </li>

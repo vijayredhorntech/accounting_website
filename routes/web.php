@@ -43,4 +43,29 @@ Route::middleware([
     })->name('customer-vendor-details');
 
 
+
+
+    // products and inventory routes
+
+    Route::get('/product-group', function () {
+        return view('products_inventory.product-group');
+    })->name('product-group');
+
+    Route::get('/create-product', function () {
+        return view('products_inventory.create');
+    })->name('create-product');
+
+    Route::get('/products-list', function () {
+        return view('products_inventory.products-list');
+    })->name('products-list');
+
+    Route::get('/godown', function () {
+        return view('products_inventory.godown');
+    })->name('godown');
+
+    Route::get('/godown-details', function () {
+        return view('products_inventory.godown-details');
+        })->name('godown-details');
+
+
 });
