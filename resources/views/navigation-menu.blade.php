@@ -41,7 +41,7 @@
                     <!-- BEGIN: Second Child -->
                     <ul class="hidden">
                         <li>
-                            <a href="echo-dashboard-overview-2.html" class="side-menu__link ">
+                            <a href="{{route('create-customer-vendor')}}" class="side-menu__link ">
                                 <i data-tw-merge="" data-lucide="plus" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                                 <div class="side-menu__link__title">Add New</div>
                             </a>

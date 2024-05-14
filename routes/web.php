@@ -22,4 +22,13 @@ Route::middleware([
     })->name('dashboard');
 
 
+
+
+    // customers and vendors routes
+
+    Route::get('/create_customer_vendor', function () {
+        return view('customers_vendors.create');
+    })->name('create-customer-vendor');
+
+
 });
