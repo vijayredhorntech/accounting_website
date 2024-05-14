@@ -26,9 +26,21 @@ Route::middleware([
 
     // customers and vendors routes
 
-    Route::get('/create_customer_vendor', function () {
+    Route::get('/create-customer-vendor', function () {
         return view('customers_vendors.create');
     })->name('create-customer-vendor');
+
+    Route::get('/customers', function () {
+        return view('customers_vendors.customers');
+    })->name('customers');
+
+    Route::get('/vendors', function () {
+        return view('customers_vendors.vendors');
+    })->name('vendors');
+
+    Route::get('/details', function () {
+        return view('customers_vendors.details');
+    })->name('customer-vendor-details');
 
 
 });

@@ -283,6 +283,7 @@
 <script src="{{asset('assets/dist/js/vendors/dom.js')}}"></script>
 <script src="{{asset('assets/dist/js/vendors/tailwind-merge.js')}}"></script>
 <script src="{{asset('assets/dist/js/vendors/lucide.js')}}"></script>
+<script src="{{asset('assets/dist/js/vendors/tab.js')}}"></script>
 <script src="{{asset('assets/dist/js/vendors/dayjs.js')}}"></script>
 <script src="{{asset('assets/dist/js/vendors/litepicker.js')}}"></script>
 <script src="{{asset('assets/dist/js/vendors/tiny-slider.js')}}"></script>

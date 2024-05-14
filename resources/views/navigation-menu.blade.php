@@ -45,29 +45,23 @@
                                 <i data-tw-merge="" data-lucide="plus" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                                 <div class="side-menu__link__title">Add New</div>
                             </a>
-                            <!-- BEGIN: Second Child -->
-                            <!-- END: Second Child -->
                         </li>
 
                         <li>
-                            <a href="echo-product-list.html" class="side-menu__link ">
+                            <a href="{{route('customers')}}" class="side-menu__link ">
                                 <i data-tw-merge="" data-lucide="users" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                                 <div class="side-menu__link__title">
                                     Customers
                                 </div>
                             </a>
-                            <!-- BEGIN: Third Child -->
-                            <!-- END: Third Child -->
                         </li>
                         <li>
-                            <a href="echo-product-grid.html" class="side-menu__link ">
+                            <a href="{{route('vendors')}}" class="side-menu__link ">
                                 <i data-tw-merge="" data-lucide="user" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                                 <div class="side-menu__link__title">
                                     Vendors
                                 </div>
                             </a>
-                            <!-- BEGIN: Third Child -->
-                            <!-- END: Third Child -->
                         </li>
                     </ul>
                     <!-- END: Second Child -->
