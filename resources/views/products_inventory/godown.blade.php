@@ -194,6 +194,9 @@
                                     <tr class="">
 
                                         <td class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 font-medium text-slate-500">
+                                            Sr. No.
+                                        </td>
+                                        <td class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 font-medium text-slate-500">
                                             Name
                                         </td>
                                         <td class="px-5 border-b dark:border-darkmode-300 whitespace-nowrap border-t border-slate-200/60 bg-slate-50 py-4 text-center font-medium text-slate-500">
@@ -287,6 +290,12 @@
                                     @foreach($godowns as $godown)
                                         <tr class="[&amp;_td]:last:border-b-0">
 
+                                            <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                                <a class="whitespace-nowrap font-medium" href="{{route('godown-details')}}">
+                                                    {{$loop->iteration}}
+                                                </a>
+
+                                            </td>
                                             <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
                                                 <a class="whitespace-nowrap font-medium" href="{{route('godown-details')}}">
                                                     {{$godown['name']}}

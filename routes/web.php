@@ -68,4 +68,18 @@ Route::middleware([
         })->name('godown-details');
 
 
+
+//    invoices route here
+    Route::get('/quotation', function () {
+        return view('invoices.quotation');
+    })->name('quotation');
+    Route::get('/create-quotation', function () {
+        return view('invoices.create-quotation');
+    })->name('create-quotation');
+    Route::get('/invoice-detail', function () {
+        return view('invoices.invoice-detail');
+    })->name('invoice-detail');
+
+
+
 });

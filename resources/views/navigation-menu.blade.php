@@ -122,9 +122,9 @@
                     <!-- BEGIN: Second Child -->
                     <ul class="hidden">
                         <li>
-                            <a href="echo-dashboard-overview-2.html" class="side-menu__link ">
+                            <a href="{{route('quotation')}}" class="side-menu__link ">
                                 <i data-tw-merge="" data-lucide="file" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
-                                <div class="side-menu__link__title">Quote</div>
+                                <div class="side-menu__link__title">Quotation/ Estimate</div>
                             </a>
                         </li>
                         <li>
@@ -179,12 +179,7 @@
                     </a>
                     <!-- BEGIN: Second Child -->
                     <ul class="hidden">
-                        <li>
-                            <a href="echo-dashboard-overview-2.html" class="side-menu__link ">
-                                <i data-tw-merge="" data-lucide="file" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
-                                <div class="side-menu__link__title">Quote</div>
-                            </a>
-                        </li>
+
                         <li>
                             <a href="echo-dashboard-overview-2.html" class="side-menu__link ">
                                 <i data-tw-merge="" data-lucide="minimize-2" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>

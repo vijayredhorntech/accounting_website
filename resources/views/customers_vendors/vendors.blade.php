@@ -127,6 +127,9 @@
                                     <thead class="">
                                     <tr class="">
                                         <td class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 font-medium text-slate-500">
+                                            Sr. No.
+                                        </td>
+                                        <td class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 font-medium text-slate-500">
                                             Name
                                         </td>
                                         <td class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 font-medium text-slate-500">
@@ -260,7 +263,9 @@
                                     ?>
                                     @foreach($customers as $customer)
                                         <tr class="[&amp;_td]:last:border-b-0">
-
+                                            <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                                    {{$loop->iteration}}
+                                            </td>
                                             <td class="px-5 border-b dark:border-darkmode-300 w-80 border-dashed py-4 dark:bg-darkmode-600">
                                                 <div class="flex items-center">
                                                     <div class="image-fit zoom-in h-9 w-9">
