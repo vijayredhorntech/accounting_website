@@ -70,15 +70,25 @@ Route::middleware([
 
 
 //    invoices route here
-    Route::get('/quotation', function () {
+    Route::get('/quotations', function () {
         return view('invoices.quotation');
     })->name('quotation');
-    Route::get('/create-quotation', function () {
-        return view('invoices.create-quotation');
-    })->name('create-quotation');
-    Route::get('/invoice-detail', function () {
-        return view('invoices.invoice-detail');
+
+    Route::get('/sales', function () {
+        return view('invoices.sales');
+    })->name('sales');
+
+
+    Route::get('/create-invoice/{type}', function ($type) {
+        return view('invoices.create-invoice')->with('type', $type);
+    })->name('create-invoice');
+
+    Route::get('/invoice-detail/{type}', function ($type) {
+        return view('invoices.invoice-detail')->with('type', $type);
     })->name('invoice-detail');
+
+
+
 
 
 

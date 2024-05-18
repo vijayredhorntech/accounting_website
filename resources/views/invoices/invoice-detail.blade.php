@@ -5,7 +5,7 @@
                 <div class="col-span-12">
                     <div class="flex flex-col gap-y-3 md:h-10 md:flex-row md:items-center">
                         <div class="text-base font-medium group-[.mode--light]:text-white">
-                            Invoice: LKJOI93845793J87KHK
+                           {{ucfirst($type)}} Invoice: LKJOI93845793J87KHK
                         </div>
                         {{--                        <div class="flex flex-col gap-x-3 gap-y-2 sm:flex-row md:ml-auto">--}}
                         {{--                            <a href=""--}}
@@ -215,7 +215,7 @@
                             <div class="box box--stacked flex flex-col p-5">
                                 <div
                                     class="mb-5 border-b border-dashed border-slate-300/70 pb-5 text-[0.94rem] font-medium">
-                                    Recent Invlices
+                                    Recent {{ucfirst($type)}} Invoices
                                 </div>
 
                                     <div class="">
