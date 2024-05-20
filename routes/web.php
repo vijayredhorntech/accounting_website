@@ -82,6 +82,18 @@ Route::middleware([
         return view('invoices.sales-return');
     })->name('sales-return');
 
+    Route::get('/credit-note', function () {
+        return view('invoices.credit-note');
+    })->name('credit-note');
+
+    Route::get('/delivery-challan', function () {
+        return view('invoices.delivery-challan');
+    })->name('delivery-challan');
+
+    Route::get('/performa-invoice', function () {
+        return view('invoices.performa-invoice');
+    })->name('performa-invoice');
+
 
 
 
@@ -91,6 +103,18 @@ Route::middleware([
         return view('invoices.purchase');
     })->name('purchase');
 
+    Route::get('/debit-note', function () {
+        return view('invoices.debit-note');
+    })->name('debit-note');
+
+    Route::get('/purchase-return', function () {
+        return view('invoices.purchase-return');
+    })->name('purchase-return');
+
+    Route::get('/purchase-order', function () {
+        return view('invoices.purchase-order');
+    })->name('purchase-order');
+
 
     Route::get('/create-invoice/{type}', function ($type) {
         return view('invoices.create-invoice')->with('type', $type);
@@ -99,6 +123,25 @@ Route::middleware([
     Route::get('/invoice-detail/{type}', function ($type) {
         return view('invoices.invoice-detail')->with('type', $type);
     })->name('invoice-detail');
+
+
+    Route::get('/payment-in', function () {
+        return view('invoices.payment-in');
+    })->name('payment-in');
+
+    Route::get('/payment-out', function () {
+        return view('invoices.payment-out');
+    })->name('payment-out');
+
+    Route::get('/create-payment/{type}', function ($type) {
+        return view('invoices.create-payment')->with('type', $type);
+    })->name('create-payment');
+
+
+    Route::get('/invoice-payment/{type}', function ($type) {
+        return view('invoices.payment-detail')->with('type', $type);
+    })->name('payment-detail');
+
 
 
 

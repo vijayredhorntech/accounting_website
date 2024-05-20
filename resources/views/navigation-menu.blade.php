@@ -134,13 +134,13 @@
                             </a>
                         </li>
                         <li>
-                            <a href="echo-dashboard-overview-2.html" class="side-menu__link ">
+                            <a href="{{route('payment-in')}}" class="side-menu__link ">
                                 <i data-tw-merge="" data-lucide="corner-right-down" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                                 <div class="side-menu__link__title">Payment In</div>
                             </a>
                         </li>
                         <li>
-                            <a href="echo-dashboard-overview-2.html" class="side-menu__link ">
+                            <a href="{{route('credit-note')}}" class="side-menu__link ">
                                 <i data-tw-merge="" data-lucide="corner-down-right" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                                 <div class="side-menu__link__title">Credit Note</div>
                             </a>
@@ -152,13 +152,13 @@
                             </a>
                         </li>
                         <li>
-                            <a href="echo-dashboard-overview-2.html" class="side-menu__link ">
+                            <a href="{{route('delivery-challan')}}" class="side-menu__link ">
                                 <i data-tw-merge="" data-lucide="check-circle" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                                 <div class="side-menu__link__title">Delivery Challans</div>
                             </a>
                         </li>
                         <li>
-                            <a href="echo-dashboard-overview-2.html" class="side-menu__link ">
+                            <a href="{{route('performa-invoice')}}" class="side-menu__link ">
                                 <i data-tw-merge="" data-lucide="shuffle" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                                 <div class="side-menu__link__title">Performa Invoice</div>
                             </a>
@@ -187,35 +187,30 @@
                             </a>
                         </li>
                         <li>
-                            <a href="echo-dashboard-overview-2.html" class="side-menu__link ">
+                            <a href="{{route('payment-out')}}" class="side-menu__link ">
                                 <i data-tw-merge="" data-lucide="corner-left-up" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                                 <div class="side-menu__link__title">Payment Out</div>
                             </a>
                         </li>
                         <li>
-                            <a href="echo-dashboard-overview-2.html" class="side-menu__link ">
+                            <a href="{{route('debit-note')}}" class="side-menu__link ">
                                 <i data-tw-merge="" data-lucide="corner-up-left" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                                 <div class="side-menu__link__title">Debit Note</div>
                             </a>
                         </li>
                         <li>
-                            <a href="echo-dashboard-overview-2.html" class="side-menu__link ">
+                            <a href="{{route('purchase-return')}}" class="side-menu__link ">
                                 <i data-tw-merge="" data-lucide="chevrons-left" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                                 <div class="side-menu__link__title">Purchase Return</div>
                             </a>
                         </li>
                         <li>
-                            <a href="echo-dashboard-overview-2.html" class="side-menu__link ">
+                            <a href="{{route('purchase-order')}}" class="side-menu__link ">
                                 <i data-tw-merge="" data-lucide="check-circle" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
-                                <div class="side-menu__link__title">Delivery Challans</div>
+                                <div class="side-menu__link__title">Purchase Order</div>
                             </a>
                         </li>
-                        <li>
-                            <a href="echo-dashboard-overview-2.html" class="side-menu__link ">
-                                <i data-tw-merge="" data-lucide="shuffle" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
-                                <div class="side-menu__link__title">Performa Invoice</div>
-                            </a>
-                        </li>
+
 
 
                     </ul>

@@ -29,7 +29,7 @@
                                     </div>
                                     <div class="md:ml-auto md:text-right">
                                         <div class="-mt-1 text-lg font-medium text-primary">
-                                            # INVOICE
+                                            # {{ucfirst($type)}} Invoice
                                         </div>
                                         <div class="mt-1">
                                             IVR/20240301/IX/V/4978182226
@@ -55,7 +55,7 @@
                                     </div>
                                     <div class="mt-7 flex flex-col gap-4 sm:ml-auto sm:mt-0 sm:text-right">
                                         <div>
-                                            <div class="text-slate-500">Invoice date :</div>
+                                            <div class="text-slate-500">{{ucfirst($type)}} Invoice date :</div>
                                             <div class="mt-1.5 font-medium text-slate-600">
                                                 Wed Sep 2021
                                             </div>
@@ -164,7 +164,7 @@
                                         </div>
                                     </div>
 
-                                    @if($type == 'sales' || $type == 'purchase')
+                                    @if($type == 'sales')
                                         <div class="flex items-center justify-end">
                                             <div class="text-slate-500">Amount {{$type==='sales'?'received':'paid'}}:</div>
                                             <div class="w-20 font-medium text-slate-600 sm:w-52">
@@ -176,6 +176,15 @@
                                             <div class="text-slate-500">Due balance:</div>
                                             <div class="w-20 font-medium text-slate-600 sm:w-52">
                                                 ₹ 27
+                                            </div>
+                                        </div>
+                                    @endif
+
+                                    @if($type == 'sales-return' || $type == 'debit-note'|| $type == 'purchase-return' || $type == 'purchase' || $type == 'credit-note')
+                                        <div class="flex items-center justify-end">
+                                            <div class="text-slate-500">@if($type == 'debit-note'|| $type == 'purchase-return') Received @else Paid @endif:</div>
+                                            <div class="w-20 font-medium text-slate-600 sm:w-52">
+                                                ₹ 1,463
                                             </div>
                                         </div>
                                     @endif

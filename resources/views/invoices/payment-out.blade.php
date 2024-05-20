@@ -5,11 +5,11 @@
                 <div class="col-span-12">
                     <div class="flex flex-col gap-y-3 md:h-10 md:flex-row md:items-center">
                         <div class="text-base font-medium group-[.mode--light]:text-white">
-                            Sales Return
+                            Payment Out
                         </div>
                         <div class="flex flex-col gap-x-3 gap-y-2 sm:flex-row md:ml-auto">
-                            <a href="{{route('create-invoice',['type'=>'sales-return'])}}" class="transition duration-200 border shadow-sm inline-flex items-center justify-center py-2 px-3 rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;:hover:not(:disabled)]:bg-opacity-90 [&amp;:hover:not(:disabled)]:border-opacity-90 [&amp;:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed bg-primary border-primary text-white dark:border-primary group-[.mode--light]:!border-transparent group-[.mode--light]:!bg-white/[0.12] group-[.mode--light]:!text-slate-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="pen-line" class="lucide lucide-pen-line mr-2 h-4 w-4 stroke-[1.3]"><path d="M12 20h9"></path><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg>
-                                Create Sales Return</a>
+                            <a href="{{route('create-payment',['type'=>'payment-out'])}}" class="transition duration-200 border shadow-sm inline-flex items-center justify-center py-2 px-3 rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;:hover:not(:disabled)]:bg-opacity-90 [&amp;:hover:not(:disabled)]:border-opacity-90 [&amp;:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed bg-primary border-primary text-white dark:border-primary group-[.mode--light]:!border-transparent group-[.mode--light]:!bg-white/[0.12] group-[.mode--light]:!text-slate-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="pen-line" class="lucide lucide-pen-line mr-2 h-4 w-4 stroke-[1.3]"><path d="M12 20h9"></path><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg>
+                                Create Payment Out</a>
                         </div>
                     </div>
                     <div class="mt-3.5 flex flex-col gap-8">
@@ -91,20 +91,19 @@
                                             Date
                                         </td>
                                         <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
-                                            Sales Return No.
+                                            Payment No.
                                         </td>
                                         <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4  font-medium text-slate-500">
                                             Party Name
                                         </td>
-                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
-                                            Due In
-                                        </td>
+
                                         <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
                                             Amount
                                         </td>
-                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4  font-medium text-slate-500">
-                                            Status
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
+                                            Action
                                         </td>
+
 
 
                                     </tr>
@@ -127,11 +126,7 @@
                                                 Other Company Name
                                             </div>
                                         </td>
-                                        <td class="px-5 border-[1px] border-slate-300 py-4 dark:bg-darkmode-600">
-                                            <div class="whitespace-nowrap">
-                                                10 Days
-                                            </div>
-                                        </td>
+
                                         <td class="px-5 border-[1px] border-slate-300 py-4 dark:bg-darkmode-600">
                                             <div class="whitespace-nowrap">
                                                 ₹ 1325
@@ -140,8 +135,8 @@
 
                                         <td class="px-5 border-[1px] border-slate-300 py-4 dark:bg-darkmode-600">
                                             <div class="whitespace-nowrap">
-                                                <a href="{{route('invoice-detail',['type'=>'sales-return'])}}" class="cursor-pointer flex w-max items-center p-2 transition duration-300 ease-in-out rounded-md bg-warning/80 hover:bg-orange-200/40 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item text-warning">
-                                                    Unpaid</a>
+                                                <a href="{{route('payment-detail',['type'=>'payment-out'])}}" class="cursor-pointer flex w-max items-center p-2 transition duration-300 ease-in-out rounded-md bg-warning/80 hover:bg-orange-200/40 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item text-warning">
+                                                    View</a>
                                             </div>
                                         </td>
                                     </tr>

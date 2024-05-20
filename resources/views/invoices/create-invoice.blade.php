@@ -669,11 +669,11 @@
                                         </div>
 
 
-                                        @if($type == 'sales' || $type == 'purchase')
+                                        @if($type == 'sales' || $type == 'purchase' || $type == 'sales-return' || $type == 'credit-note' || $type == 'debit-note' || $type == 'purchase-return')
                                             <div class=" w-full flex justify-between lg:flex-row md:flex-row flex-col gap-2 ">
                                                 <div class="font-semibold mt-1.5 text-sm leading-relaxed text-slate-500/80 flex gap-2">
 
-                                                    Amount {{ $type == 'sales' ? 'Received' : 'Paid'}}
+                                                    Amount @if($type==='sales' || $type==='credit-note' || $type==='debit-note' || $type === 'purchase-return') Received @else Paid @endif
                                                 </div>
                                                 <div class="lg:w-[200px] md:w-[200px] w-full flex gap-2 lg:flex-row md:flex-row flex-col">
                                                     <input type="number" placeholder="Amount (₹) ....."
