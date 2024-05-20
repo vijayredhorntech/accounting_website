@@ -193,25 +193,25 @@
                                     <thead class="">
                                     <tr class="">
 
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
                                             Sr. No.
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
                                             Name
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 whitespace-nowrap border-t border-slate-200/60 bg-slate-50 py-4 text-center font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 whitespace-nowrap  bg-slate-50 py-4 text-center font-medium text-slate-500">
                                             Address
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 whitespace-nowrap border-t border-slate-200/60 bg-slate-50 py-4 text-center font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 whitespace-nowrap  bg-slate-50 py-4 text-center font-medium text-slate-500">
                                             Created At
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 whitespace-nowrap border-t border-slate-200/60 bg-slate-50 py-4 text-center font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 whitespace-nowrap  bg-slate-50 py-4 text-center font-medium text-slate-500">
                                             Products
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 text-center font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 text-center font-medium text-slate-500">
                                             Status
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 w-36 border-t border-slate-200/60 bg-slate-50 py-4 text-center font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 w-36  bg-slate-50 py-4 text-center font-medium text-slate-500">
                                             Action
                                         </td>
                                     </tr>
@@ -290,34 +290,34 @@
                                     @foreach($godowns as $godown)
                                         <tr class="[&amp;_td]:last:border-b-0">
 
-                                            <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                            <td class="px-5 border-[1px] border-slate-300 py-4 dark:bg-darkmode-600">
                                                 <a class="whitespace-nowrap font-medium" href="{{route('godown-details')}}">
                                                     {{$loop->iteration}}
                                                 </a>
 
                                             </td>
-                                            <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                            <td class="px-5 border-[1px] border-slate-300 py-4 dark:bg-darkmode-600">
                                                 <a class="whitespace-nowrap font-medium" href="{{route('godown-details')}}">
                                                     {{$godown['name']}}
                                                 </a>
 
                                             </td>
-                                            <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 text-center dark:bg-darkmode-600">
+                                            <td class="px-5 border-[1px] border-slate-300 py-4 text-center dark:bg-darkmode-600">
                                                 <div class="whitespace-nowrap">
                                                     {{$godown['address']}}
                                                 </div>
                                             </td>
-                                            <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 text-center dark:bg-darkmode-600">
+                                            <td class="px-5 border-[1px] border-slate-300 py-4 text-center dark:bg-darkmode-600">
                                                 <div class="whitespace-nowrap">
                                                     {{$godown['created_at']}}
                                                 </div>
                                             </td>
-                                            <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 text-center dark:bg-darkmode-600">
+                                            <td class="px-5 border-[1px] border-slate-300 py-4 text-center dark:bg-darkmode-600">
                                                 <div class="whitespace-nowrap">
                                                     {{$godown['total_products']}}
                                                 </div>
                                             </td>
-                                            <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                            <td class="px-5 border-[1px] border-slate-300 py-4 dark:bg-darkmode-600">
                                                 <div class="flex items-center justify-center text-{{$godown['status']==='Active'?'success':'danger'}}">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="database" class="lucide lucide-database h-3.5 w-3.5 stroke-[1.7]"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg>
                                                     <div class="ml-1.5 whitespace-nowrap">
@@ -325,7 +325,7 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="px-5 border-b dark:border-darkmode-300 relative border-dashed py-4 dark:bg-darkmode-600">
+                                            <td class="px-5 border-[1px] border-slate-300 relative py-4 dark:bg-darkmode-600">
                                                 <div class="flex items-center justify-center">
                                                     <div data-tw-placement="bottom-end" class="dropdown relative h-5"><button data-tw-toggle="dropdown" aria-expanded="false" class="cursor-pointer h-5 w-5 text-slate-500"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="more-vertical" class="lucide lucide-more-vertical stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
                                                         </button>

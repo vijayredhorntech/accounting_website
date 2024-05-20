@@ -146,7 +146,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="echo-dashboard-overview-2.html" class="side-menu__link ">
+                            <a href="{{route('sales-return')}}" class="side-menu__link ">
                                 <i data-tw-merge="" data-lucide="chevrons-right" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                                 <div class="side-menu__link__title">Sale Return</div>
                             </a>
@@ -181,7 +181,7 @@
                     <ul class="hidden">
 
                         <li>
-                            <a href="echo-dashboard-overview-2.html" class="side-menu__link ">
+                            <a href="{{route('purchase')}}" class="side-menu__link ">
                                 <i data-tw-merge="" data-lucide="minimize-2" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                                 <div class="side-menu__link__title">Purchase Invoice</div>
                             </a>

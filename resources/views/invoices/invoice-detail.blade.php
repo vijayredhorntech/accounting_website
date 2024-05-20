@@ -70,69 +70,69 @@
                                 </div>
                                 <div class="mt-10 rounded-[0.6rem] border border-slate-200/80">
                                     <div class="overflow-auto xl:overflow-visible">
-                                        <table class="w-full text-left">
+                                        <table class="w-full text-left border-[1px] border-slate-300 border-collapse">
                                             <thead class="">
                                             <tr class="">
-                                                <td class="px-5 border-b dark:border-darkmode-300 border-slate-200/80 bg-slate-50 py-4 font-medium text-slate-500 first:rounded-tl-[0.6rem] last:rounded-tr-[0.6rem]">
+                                                <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500 first:rounded-tl-[0.6rem] last:rounded-tr-[0.6rem]">
                                                     Item
                                                 </td>
-                                                <td class="px-5 border-b dark:border-darkmode-300 border-slate-200/80 bg-slate-50 py-4 text-right font-medium text-slate-500 first:rounded-tl-[0.6rem] last:rounded-tr-[0.6rem]">
+                                                <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 text-right font-medium text-slate-500 first:rounded-tl-[0.6rem] last:rounded-tr-[0.6rem]">
                                                     Quantity
                                                 </td>
-                                                <td class="px-5 border-b dark:border-darkmode-300 border-slate-200/80 bg-slate-50 py-4 text-right font-medium text-slate-500 first:rounded-tl-[0.6rem] last:rounded-tr-[0.6rem]">
+                                                <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 text-right font-medium text-slate-500 first:rounded-tl-[0.6rem] last:rounded-tr-[0.6rem]">
                                                     Rate
                                                 </td>
-                                                <td class="px-5 border-b dark:border-darkmode-300 border-slate-200/80 bg-slate-50 py-4 text-right font-medium text-slate-500 first:rounded-tl-[0.6rem] last:rounded-tr-[0.6rem]">
+                                                <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 text-right font-medium text-slate-500 first:rounded-tl-[0.6rem] last:rounded-tr-[0.6rem]">
                                                     Amount
                                                 </td>
                                             </tr>
                                             </thead>
                                             <tbody>
                                             <tr class="[&amp;_td]:last:border-b-0">
-                                                <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                                <td class="px-5 border-[1px] border-slate-300 py-4 dark:bg-darkmode-600">
                                                     <div class="flex items-center">
                                                         <div class="whitespace-nowrap">
                                                             Computers &Accessories
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 text-right dark:bg-darkmode-600">
+                                                <td class="px-5 border-[1px] border-slate-300 py-4 text-right dark:bg-darkmode-600">
                                                     <div class="whitespace-nowrap">
                                                         3
                                                     </div>
                                                 </td>
-                                                <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 text-right dark:bg-darkmode-600">
+                                                <td class="px-5 border-[1px] border-slate-300 py-4 text-right dark:bg-darkmode-600">
                                                     <div class="whitespace-nowrap">
                                                         ₹ 159
                                                     </div>
                                                 </td>
-                                                <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 text-right dark:bg-darkmode-600">
+                                                <td class="px-5 border-[1px] border-slate-300 py-4 text-right dark:bg-darkmode-600">
                                                     <div class="whitespace-nowrap font-medium">
                                                         ₹ 477
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr class="[&amp;_td]:last:border-b-0">
-                                                <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                                <td class="px-5 border-[1px] border-slate-300 py-4 dark:bg-darkmode-600">
                                                     <div class="flex items center">
                                                         <div class="whitespace nowrap">
                                                             Software & Licenses
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 text-right dark:bg-darkmode-600">
+                                                <td class="px-5 border-[1px] border-slate-300 py-4 text-right dark:bg-darkmode-600">
                                                     <div class="whitespace
                                                     -nowrap">
                                                         2
                                                     </div>
                                                 </td>
-                                                <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 text-right dark:bg-darkmode-600">
+                                                <td class="px-5 border-[1px] border-slate-300 py-4 text-right dark:bg-darkmode-600">
                                                     <div class="whitespace
                                                     -nowrap">
                                                         ₹ 245
                                                     </div>
                                                 </td>
-                                                <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 text-right dark:bg-darkmode-600">
+                                                <td class="px-5 border-[1px] border-slate-300 py-4 text-right dark:bg-darkmode-600">
                                                     <div class="whitespace
                                                     -nowrap font-medium">
                                                         ₹ 490
@@ -164,17 +164,29 @@
                                         </div>
                                     </div>
 
-                                    <div class="flex items-center justify-end">
-                                        <div class="text-slate-500">Amount paid:</div>
-                                        <div class="w-20 font-medium text-slate-600 sm:w-52">
-                                            ₹ 1,463
+                                    @if($type == 'sales' || $type == 'purchase')
+                                        <div class="flex items-center justify-end">
+                                            <div class="text-slate-500">Amount {{$type==='sales'?'received':'paid'}}:</div>
+                                            <div class="w-20 font-medium text-slate-600 sm:w-52">
+                                                ₹ 1,463
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="flex items-center justify-end">
-                                        <div class="text-slate-500">Due balance:</div>
-                                        <div class="w-20 font-medium text-slate-600 sm:w-52">
-                                            ₹ 27
+
+                                        <div class="flex items-center justify-end">
+                                            <div class="text-slate-500">Due balance:</div>
+                                            <div class="w-20 font-medium text-slate-600 sm:w-52">
+                                                ₹ 27
+                                            </div>
                                         </div>
+                                    @endif
+
+
+
+                                </div>
+                                <div class="flex  items-end w-full">
+                                    <div class="text-slate-500">Amount (In words): </div>
+                                    <div class="font-medium text-slate-600">
+                                        One Thousand Four Hundred and Ninety Rupees Only
                                     </div>
                                 </div>
                                 <div class="-mx-8 border-t border-dashed border-slate-200/80 px-10 pt-6">
@@ -210,6 +222,7 @@
                                 </div>
                             </div>
                         </div>
+
 {{--                        right section--}}
                         <div class="col-span-12 xl:col-span-4">
                             <div class="box box--stacked flex flex-col p-5">

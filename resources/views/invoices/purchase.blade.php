@@ -5,10 +5,10 @@
                 <div class="col-span-12">
                     <div class="flex flex-col gap-y-3 md:h-10 md:flex-row md:items-center">
                         <div class="text-base font-medium group-[.mode--light]:text-white">
-                            Sales Invoices
+                            Purchase Invoices
                         </div>
                         <div class="flex flex-col gap-x-3 gap-y-2 sm:flex-row md:ml-auto">
-                            <a href="{{route('create-invoice',['type'=>'sales'])}}" class="transition duration-200 border shadow-sm inline-flex items-center justify-center py-2 px-3 rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;:hover:not(:disabled)]:bg-opacity-90 [&amp;:hover:not(:disabled)]:border-opacity-90 [&amp;:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed bg-primary border-primary text-white dark:border-primary group-[.mode--light]:!border-transparent group-[.mode--light]:!bg-white/[0.12] group-[.mode--light]:!text-slate-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="pen-line" class="lucide lucide-pen-line mr-2 h-4 w-4 stroke-[1.3]"><path d="M12 20h9"></path><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg>
+                            <a href="{{route('create-invoice',['type'=>'purchase'])}}" class="transition duration-200 border shadow-sm inline-flex items-center justify-center py-2 px-3 rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;:hover:not(:disabled)]:bg-opacity-90 [&amp;:hover:not(:disabled)]:border-opacity-90 [&amp;:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed bg-primary border-primary text-white dark:border-primary group-[.mode--light]:!border-transparent group-[.mode--light]:!bg-white/[0.12] group-[.mode--light]:!text-slate-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="pen-line" class="lucide lucide-pen-line mr-2 h-4 w-4 stroke-[1.3]"><path d="M12 20h9"></path><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg>
                                 Add New Invoice</a>
                         </div>
                     </div>
@@ -16,8 +16,8 @@
                         <div class="box box--stacked flex flex-col p-5">
                             <div class="grid grid-cols-3 gap-5">
                                 <div class="box col-span-4 rounded-[0.6rem] border border-dashed border-slate-300/80 p-5 shadow-sm md:col-span-2 xl:col-span-1">
-                                    <div class="text-base text-slate-500">Total Sales</div>
-                                    <div class="mt-1.5 text-2xl font-medium">15,00,251</div>
+                                    <div class="text-base text-slate-500">Total Purchase</div>
+                                    <div class="mt-1.5 text-2xl font-medium">5,20,033</div>
                                     <div class="absolute inset-y-0 right-0 mr-5 flex flex-col justify-center">
                                         <div class="flex items-center rounded-full border border-warning/10 bg-warning/10 p-4 text-xs font-medium text-warning">
                                             <i data-tw-merge="" data-lucide="trending-up" class="stroke-[1] w-5 h-5 "></i>
@@ -26,7 +26,7 @@
                                 </div>
                                 <div class="box col-span-4 rounded-[0.6rem] border border-dashed border-slate-300/80 p-5 shadow-sm md:col-span-2 xl:col-span-1">
                                     <div class="text-base text-slate-500">Paid</div>
-                                    <div class="mt-1.5 text-2xl font-medium">15,00,000</div>
+                                    <div class="mt-1.5 text-2xl font-medium">5,00,000</div>
                                     <div class="absolute inset-y-0 right-0 mr-5 flex flex-col justify-center">
                                         <div class="flex items-center rounded-full border border-success/10 bg-success/10 p-4 text-xs font-medium text-success">
                                             <i data-tw-merge="" data-lucide="smile" class="stroke-[1] w-5 h-5 "></i>
@@ -35,7 +35,7 @@
                                 </div>
                                 <div class="box col-span-4 rounded-[0.6rem] border border-dashed border-slate-300/80 p-5 shadow-sm md:col-span-2 xl:col-span-1">
                                     <div class="text-base text-slate-500">Unpaid</div>
-                                    <div class="font-mediumm mt-1.5 text-2xl">251</div>
+                                    <div class="font-mediumm mt-1.5 text-2xl">20,023</div>
                                     <div class="absolute inset-y-0 right-0 mr-5 flex flex-col justify-center">
                                         <div class="flex items-center rounded-full border border-danger/10 bg-danger/10 p-4 text-xs font-medium text-danger">
                                             <i data-tw-merge="" data-lucide="meh" class="stroke-[1] w-5 h-5 "></i>
@@ -101,28 +101,28 @@
                             </div>
 
                             <div class="overflow-auto xl:overflow-visible">
-                                <table class="w-full text-left border-[1px] border-slate-300 border-collapse ">
+                                <table class="w-full text-left border-[1px] border-slate-300 border-collapse">
                                     <thead class="">
                                     <tr class="">
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
                                             Sr. No.
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
                                             Invoice Date
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
                                             Invoice Number
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-[1px] border-slate-300 bg-slate-50 py-4  font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4  font-medium text-slate-500">
                                             Party Name
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
                                             Due In
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
                                             Amount
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-[1px] border-slate-300 bg-slate-50 py-4  font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4  font-medium text-slate-500">
                                             Status
                                         </td>
 
@@ -233,18 +233,16 @@
                                                 {{$loop->iteration}}
                                             </td>
                                             <td class="px-5 border-[1px] border-slate-300 py-4 dark:bg-darkmode-600">
-                                              {{$customer['date']}}
+                                                {{$customer['date']}}
                                             </td>
                                             <td class="px-5 border-[1px] border-slate-300 py-4 dark:bg-darkmode-600">
-                                              {{$customer['invoice_number']}}
+                                                {{$customer['invoice_number']}}
                                             </td>
-
                                             <td class="px-5 border-[1px] border-slate-300 py-4 dark:bg-darkmode-600">
                                                 <div class="whitespace-nowrap">
                                                     {{$customer['party_name']}}
                                                 </div>
                                             </td>
-
                                             <td class="px-5 border-[1px] border-slate-300 py-4 dark:bg-darkmode-600">
                                                 <div class="flex items-center  text-{{$customer['due_in']===0? 'danger': ($customer['due_in']>=20?'success':'warning')}}">
                                                     <div class="ml-1.5 whitespace-nowrap">
@@ -252,24 +250,20 @@
                                                     </div>
                                                 </div>
                                             </td>
-
-
-
                                             <td class="px-5 border-[1px] border-slate-300 py-4 dark:bg-darkmode-600">
                                                 <div class="whitespace-nowrap">
                                                     ₹   {{$customer['amount']}}
-                                                   @if($customer['un_paid']>0)
+                                                    @if($customer['un_paid']>0)
 
-                                                    <br>
-                                                    <span class="text-xs text-slate-500">unpaid ₹ {{$customer['un_paid']}}</span>
-                                                       @endif
+                                                        <br>
+                                                        <span class="text-xs text-slate-500">unpaid ₹ {{$customer['un_paid']}}</span>
+                                                    @endif
                                                 </div>
                                             </td>
-
                                             <td class="px-5 border-[1px] border-slate-300 py-4 dark:bg-darkmode-600">
                                                 <div class="flex items-center  text-{{$customer['status']==='fully_paid'? 'success': ($customer['status']==='un_paid'?'danger':'warning')}}">
                                                     <i data-tw-merge="" data-lucide="{{$customer['status']==='fully_paid'? 'check': ($customer['status']==='un_paid'?'x':'activity')}}" class="stroke-[1] w-5 h-5"></i>
-                                                    <a  href="{{route('invoice-detail',['type'=>'sales'])}}" class="ml-1.5 whitespace-nowrap">
+                                                    <a  href="{{route('invoice-detail',['type'=>'purchase'])}}" class="ml-1.5 whitespace-nowrap">
                                                         {{strtoupper($customer['status'])}}
                                                     </a>
                                                 </div>

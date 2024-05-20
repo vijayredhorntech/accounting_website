@@ -78,6 +78,19 @@ Route::middleware([
         return view('invoices.sales');
     })->name('sales');
 
+    Route::get('/sales-return', function () {
+        return view('invoices.sales-return');
+    })->name('sales-return');
+
+
+
+
+
+
+    Route::get('/purchase', function () {
+        return view('invoices.purchase');
+    })->name('purchase');
+
 
     Route::get('/create-invoice/{type}', function ($type) {
         return view('invoices.create-invoice')->with('type', $type);

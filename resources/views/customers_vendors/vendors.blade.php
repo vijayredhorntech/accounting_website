@@ -123,32 +123,32 @@
                             </div>
 
                             <div class="overflow-auto xl:overflow-visible">
-                                <table class="w-full text-left border-b border-slate-200/60">
+                                <table class="w-full text-left border-[1px] border-slate-300 border-collapse">
                                     <thead class="">
                                     <tr class="">
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
                                             Sr. No.
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
                                             Name
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
                                             Joined Date
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 text-center font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 text-center font-medium text-slate-500">
                                             Status
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
                                             Recent Transaction
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
                                             Due Invoices
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 text-center font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 text-center font-medium text-slate-500">
                                             Balance
                                         </td>
 
-                                        <td class="px-5 border-b dark:border-darkmode-300 w-20 border-t border-slate-200/60 bg-slate-50 py-4 text-center font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 w-20  bg-slate-50 py-4 text-center font-medium text-slate-500">
                                             Action
                                         </td>
                                     </tr>
@@ -263,10 +263,10 @@
                                     ?>
                                     @foreach($customers as $customer)
                                         <tr class="[&amp;_td]:last:border-b-0">
-                                            <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                            <td class="px-5 border-[1px] border-slate-300 py-4 dark:bg-darkmode-600">
                                                     {{$loop->iteration}}
                                             </td>
-                                            <td class="px-5 border-b dark:border-darkmode-300 w-80 border-dashed py-4 dark:bg-darkmode-600">
+                                            <td class="px-5 border-[1px] border-slate-300 w-80  py-4 dark:bg-darkmode-600">
                                                 <div class="flex items-center">
                                                     <div class="image-fit zoom-in h-9 w-9">
                                                         <img data-placement="top" src="{{$customer['image']}}" alt="Tailwise - Admin Dashboard Template" class="tooltip cursor-pointer rounded-full shadow-[0px_0px_0px_2px_#fff,_1px_1px_5px_rgba(0,0,0,0.32)] dark:shadow-[0px_0px_0px_2px_#3f4865,_1px_1px_5px_rgba(0,0,0,0.32)]">
@@ -281,12 +281,12 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                            <td class="px-5 border-[1px] border-slate-300 py-4 dark:bg-darkmode-600">
                                                 <div class="whitespace-nowrap">
                                                     {{$customer['joined_date']}}
                                                 </div>
                                             </td>
-                                            <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                            <td class="px-5 border-[1px] border-slate-300 py-4 dark:bg-darkmode-600">
                                                 <div class="flex items-center justify-center text-{{$customer['status']==='Active'? 'success':'danger'}}">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="database" class="lucide lucide-database h-3.5 w-3.5 stroke-[1.7]"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg>
                                                     <div class="ml-1.5 whitespace-nowrap">
@@ -294,17 +294,17 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                            <td class="px-5 border-[1px] border-slate-300 py-4 dark:bg-darkmode-600">
                                                 <div class="whitespace-nowrap">
                                                     ₹  {{$customer['recent_transaction']}}
                                                 </div>
                                             </td>
-                                            <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                            <td class="px-5 border-[1px] border-slate-300 py-4 dark:bg-darkmode-600">
                                                 <div class="whitespace-nowrap">
                                                     {{$customer['due_invoices']}}
                                                 </div>
                                             </td>
-                                            <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                            <td class="px-5 border-[1px] border-slate-300 py-4 dark:bg-darkmode-600">
                                                 <div class="flex items-center justify-center text-{{$customer['balance']==='0'?'success':'danger'}}">
                                                     <i data-tw-merge="" data-lucide="{{$customer['balance']==='0'?'check':'activity'}}" class="stroke-[1] w-5 h-5"></i>
 
@@ -314,7 +314,7 @@
                                                 </div>
                                             </td>
 
-                                            <td class="px-5 border-b dark:border-darkmode-300 relative border-dashed py-4 dark:bg-darkmode-600">
+                                            <td class="px-5 border-[1px] border-slate-300 relative py-4 dark:bg-darkmode-600">
                                                 <div class="flex items-center justify-center">
                                                     <div data-tw-placement="bottom-end" class="dropdown relative h-5">
                                                         <button data-tw-toggle="dropdown" aria-expanded="false" class="cursor-pointer h-5 w-5 text-slate-500">

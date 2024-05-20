@@ -152,29 +152,29 @@
 
 
                             <div class="overflow-auto xl:overflow-visible">
-                                <table class="w-full text-left border-b border-slate-200/60">
+                                <table class="w-full text-left border-[1px] border-slate-300 border-collapse">
                                     <thead class="">
                                     <tr class="">
 
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
                                             Sr. No.
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
                                             Name
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
                                             Slug
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 whitespace-nowrap border-t border-slate-200/60 bg-slate-50 py-4 text-center font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 whitespace-nowrap  bg-slate-50 py-4 text-center font-medium text-slate-500">
                                             Total Products
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 whitespace-nowrap border-t border-slate-200/60 bg-slate-50 py-4 text-center font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 whitespace-nowrap  bg-slate-50 py-4 text-center font-medium text-slate-500">
                                             Created At
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 text-center font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 text-center font-medium text-slate-500">
                                             Status
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 w-36 border-t border-slate-200/60 bg-slate-50 py-4 text-center font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 w-36  bg-slate-50 py-4 text-center font-medium text-slate-500">
                                             Action
                                         </td>
                                     </tr>
@@ -277,10 +277,10 @@
                                     ?>
                                     @foreach($productGroups as $productGroup)
                                         <tr class="[&amp;_td]:last:border-b-0">
-                                            <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4  dark:bg-darkmode-600">
+                                            <td class="px-5 border-[1px] border-slate-300 py-4  dark:bg-darkmode-600">
                                                     {{$loop->iteration}}
                                             </td>
-                                            <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                            <td class="px-5 border-[1px] border-slate-300 py-4 dark:bg-darkmode-600">
                                                 <a class="whitespace-nowrap font-medium" href="#">
                                                                 {{$productGroup['name']}}
                                                 </a>
@@ -288,7 +288,7 @@
                                                    Tags: {{$productGroup['tags']}}
                                                 </div>
                                             </td>
-                                            <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                            <td class="px-5 border-[1px] border-slate-300 py-4 dark:bg-darkmode-600">
                                                 <a class="flex items-center text-primary" href="#">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" class="lucide lucide-external-link h-3.5 w-3.5 stroke-[1.7]"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" x2="21" y1="14" y2="3"></line></svg>
                                                     <div class="ml-1.5 whitespace-nowrap">
@@ -296,18 +296,17 @@
                                                     </div>
                                                 </a>
                                             </td>
-
-                                            <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 text-center dark:bg-darkmode-600">
+                                            <td class="px-5 border-[1px] border-slate-300 py-4 text-center dark:bg-darkmode-600">
                                                 <div class="whitespace-nowrap">
                                                     {{$productGroup['total_products']}}
                                                 </div>
                                             </td>
-                                            <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 text-center dark:bg-darkmode-600">
+                                            <td class="px-5 border-[1px] border-slate-300 py-4 text-center dark:bg-darkmode-600">
                                                 <div class="whitespace-nowrap">
                                                     {{$productGroup['created_at']}}
                                                 </div>
                                             </td>
-                                            <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                            <td class="px-5 border-[1px] border-slate-300 py-4 dark:bg-darkmode-600">
                                                 <div class="flex items-center justify-center text-{{$productGroup['status']==='Active'?'success':'danger'}}">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="database" class="lucide lucide-database h-3.5 w-3.5 stroke-[1.7]"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg>
                                                     <div class="ml-1.5 whitespace-nowrap">
@@ -315,7 +314,7 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="px-5 border-b dark:border-darkmode-300 relative border-dashed py-4 dark:bg-darkmode-600">
+                                            <td class="px-5 border-[1px] border-slate-300 relative py-4 dark:bg-darkmode-600">
                                                 <div class="flex items-center justify-center">
                                                     <div data-tw-placement="bottom-end" class="dropdown relative h-5"><button data-tw-toggle="dropdown" aria-expanded="false" class="cursor-pointer h-5 w-5 text-slate-500"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="more-vertical" class="lucide lucide-more-vertical stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
                                                         </button>

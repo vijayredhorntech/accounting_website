@@ -588,10 +588,55 @@
                                                 </div>
                                             </div>
                                         </div>
-
-
                                         <div class=" text-sm leading-relaxed text-slate-500/80 flex justify-between ">
                                             Taxable Amount: <span class="font-semibold"> ₹ 156 </span>
+                                        </div>
+
+                                        <div>
+                                            <div>
+                                                <button id="addDiscountBtn"
+                                                        onclick="
+                                                document.getElementById('addDiscountDiv').classList.remove('hidden');
+                                                document.getElementById('addDiscountBtn').classList.add('hidden');
+                                                "
+
+                                                        class="px-6 py-1 font-semibold text-primary border-dotted border-[2px] border-primary flex gap-2">
+                                                    <i data-tw-merge="" data-lucide="plus"
+                                                       class="stroke-[1] w-5 h-5 text-primary"></i>
+
+                                                    Add Discount
+                                                </button>
+                                            </div>
+                                            <div id="addDiscountDiv" class="hidden w-full grid  grid-cols-1 gap-1 ">
+                                                <div class="flex flex-col ">
+                                                    <div
+                                                        class="mt-1.5 text-xs leading-relaxed text-slate-500/80 flex justify-between">
+                                                        <div class="font-normal">Other Charges</div>
+                                                        <div class="h-max w-max cursor-pointer" onclick="
+                                                document.getElementById('addDiscountDiv').classList.add('hidden');
+                                                document.getElementById('addDiscountBtn').classList.remove('hidden');
+                                                "
+                                                        >
+                                                            <i data-tw-merge="" data-lucide="x"
+                                                               class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-2">
+                                                        <select type="text" placeholder="Charges Name ....."
+                                                               class="disabled:bg-slate-100 disabled:cursor-not-allowed dark:disabled:bg-darkmode-800/50 dark:disabled:border-transparent [&amp;[readonly]]:bg-slate-100 [&amp;[readonly]]:cursor-not-allowed [&amp;[readonly]]:dark:bg-darkmode-800/50 [&amp;[readonly]]:dark:border-transparent transition duration-200 ease-in-out w-full text-sm border-slate-200 focus:border-slate-400 shadow-sm rounded-md placeholder:text-slate-400/90 focus:ring-0 focus:ring-opacity-0 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-0 dark:placeholder:text-slate-500/80 [&amp;[type='file']]:border file:mr-4 file:py-2 file:px-4 file:rounded-l-md file:border-0 file:border-r-[1px] file:border-slate-100/10 file:text-sm file:font-semibold file:bg-slate-100 file:text-slate-500/70 hover:file:bg-200 group-[.form-inline]:flex-1 group-[.input-group]:rounded-none group-[.input-group]:[&amp;:not(:first-child)]:border-l-transparent group-[.input-group]:first:rounded-l group-[.input-group]:last:rounded-r group-[.input-group]:z-10 first:rounded-b-none last:-mt-px last:rounded-t-none focus:z-10 first:md:rounded-r-none first:md:rounded-bl-md last:md:-ml-px last:md:mt-0 last:md:rounded-l-none last:md:rounded-tr-md [&amp;:not(:first-child):not(:last-child)]:-mt-px [&amp;:not(:first-child):not(:last-child)]:rounded-none [&amp;:not(:first-child):not(:last-child)]:md:-ml-px [&amp;:not(:first-child):not(:last-child)]:md:mt-0">
+                                                            <option value="">Discount After Tax</option>
+                                                            <option value="">Discount Before Tax</option>
+                                                        </select>
+                                                        <input type="number" placeholder="Discount (%)....."
+                                                               class="disabled:bg-slate-100 disabled:cursor-not-allowed dark:disabled:bg-darkmode-800/50 dark:disabled:border-transparent [&amp;[readonly]]:bg-slate-100 [&amp;[readonly]]:cursor-not-allowed [&amp;[readonly]]:dark:bg-darkmode-800/50 [&amp;[readonly]]:dark:border-transparent transition duration-200 ease-in-out w-full text-sm border-slate-200 focus:border-slate-400 shadow-sm rounded-md placeholder:text-slate-400/90 focus:ring-0 focus:ring-opacity-0 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-0 dark:placeholder:text-slate-500/80 [&amp;[type='file']]:border file:mr-4 file:py-2 file:px-4 file:rounded-l-md file:border-0 file:border-r-[1px] file:border-slate-100/10 file:text-sm file:font-semibold file:bg-slate-100 file:text-slate-500/70 hover:file:bg-200 group-[.form-inline]:flex-1 group-[.input-group]:rounded-none group-[.input-group]:[&amp;:not(:first-child)]:border-l-transparent group-[.input-group]:first:rounded-l group-[.input-group]:last:rounded-r group-[.input-group]:z-10 first:rounded-b-none last:-mt-px last:rounded-t-none focus:z-10 first:md:rounded-r-none first:md:rounded-bl-md last:md:-ml-px last:md:mt-0 last:md:rounded-l-none last:md:rounded-tr-md [&amp;:not(:first-child):not(:last-child)]:-mt-px [&amp;:not(:first-child):not(:last-child)]:rounded-none [&amp;:not(:first-child):not(:last-child)]:md:-ml-px [&amp;:not(:first-child):not(:last-child)]:md:mt-0">
+
+                                                        <input type="number" placeholder="Discount (₹) ....."
+                                                               class="disabled:bg-slate-100 disabled:cursor-not-allowed dark:disabled:bg-darkmode-800/50 dark:disabled:border-transparent [&amp;[readonly]]:bg-slate-100 [&amp;[readonly]]:cursor-not-allowed [&amp;[readonly]]:dark:bg-darkmode-800/50 [&amp;[readonly]]:dark:border-transparent transition duration-200 ease-in-out w-full text-sm border-slate-200 focus:border-slate-400 shadow-sm rounded-md placeholder:text-slate-400/90 focus:ring-0 focus:ring-opacity-0 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-0 dark:placeholder:text-slate-500/80 [&amp;[type='file']]:border file:mr-4 file:py-2 file:px-4 file:rounded-l-md file:border-0 file:border-r-[1px] file:border-slate-100/10 file:text-sm file:font-semibold file:bg-slate-100 file:text-slate-500/70 hover:file:bg-200 group-[.form-inline]:flex-1 group-[.input-group]:rounded-none group-[.input-group]:[&amp;:not(:first-child)]:border-l-transparent group-[.input-group]:first:rounded-l group-[.input-group]:last:rounded-r group-[.input-group]:z-10 first:rounded-b-none last:-mt-px last:rounded-t-none focus:z-10 first:md:rounded-r-none first:md:rounded-bl-md last:md:-ml-px last:md:mt-0 last:md:rounded-l-none last:md:rounded-tr-md [&amp;:not(:first-child):not(:last-child)]:-mt-px [&amp;:not(:first-child):not(:last-child)]:rounded-none [&amp;:not(:first-child):not(:last-child)]:md:-ml-px [&amp;:not(:first-child):not(:last-child)]:md:mt-0">
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
                                         </div>
 
 
@@ -599,12 +644,11 @@
 
                                     {{-- round off and total amount section --}}
                                     <div class=" py-4 border-b-[1px] border-gray-200 flex flex-col gap-4">
-                                        <div
-                                            class=" w-full flex justify-between lg:flex-row md:flex-row flex-col gap-2 ">
-                                            <div
-                                                class="font-semibold mt-1.5 text-sm leading-relaxed text-slate-500/80 flex gap-2">
+                                        <div class=" w-full flex justify-between lg:flex-row md:flex-row flex-col gap-2 ">
+                                            <div class="font-semibold mt-1.5 text-sm leading-relaxed text-slate-500/80 flex gap-2">
                                                 <input type="checkbox"
-                                                       class="disabled:bg-slate-100 disabled:cursor-not-allowed dark:disabled:bg-darkmode-800/50 dark:disabled:border-transparent [&amp;[readonly]]:bg-slate-100 [&amp;[readonly]]:cursor-not-allowed [&amp;[readonly]]:dark:bg-darkmode-800/50 [&amp;[readonly]]:dark:border-transparent transition duration-200 ease-in-out text-sm border-slate-200 focus:border-slate-400 shadow-sm rounded-md placeholder:text-slate-400/90 focus:ring-0 focus:ring-opacity-0 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-0 dark:placeholder:text-slate-500/80 [&amp;[type='file']]:border file:mr-4 file:py-2 file:px-4 file:rounded-l-md file:border-0 file:border-r-[1px] file:border-slate-100/10 file:text-sm file:font-semibold file:bg-slate-100 file:text-slate-500/70 hover:file:bg-200 group-[.form-inline]:flex-1 group-[.input-group]:rounded-none group-[.input-group]:[&amp;:not(:first-child)]:border-l-transparent group-[.input-group]:first:rounded-l group-[.input-group]:last:rounded-r group-[.input-group]:z-10 first:rounded-b-none last:-mt-px last:rounded-t-none focus:z-10 first:md:rounded-r-none first:md:rounded-bl-md last:md:-ml-px last:md:mt-0 last:md:rounded-l-none last:md:rounded-tr-md [&amp;:not(:first-child):not(:last-child)]:-mt-px [&amp;:not(:first-child):not(:last-child)]:rounded-none [&amp;:not(:first-child):not(:last-child)]:md:-ml-px [&amp;:not(:first-child):not(:last-child)]:md:mt-0">
+                                                       class="disabled:bg-slate-100 disabled:cursor-not-allowed dark:disabled:bg-darkmode-800/50 dark:disabled:border-transparent [&amp;[readonly]]:bg-slate-100 [&amp;[readonly]]:cursor-not-allowed [&amp;[readonly]]:dark:bg-darkmode-800/50 [&amp;[readonly]]:dark:border-transparent
+                                                        transition duration-200 ease-in-out text-sm border-[1px] border-slate-400 focus:border-slate-400 shadow-sm rounded-tr-md placeholder:text-slate-400/90 focus:ring-0 focus:ring-opacity-0">
                                                 Auto Round Off
                                             </div>
                                             <div
@@ -620,10 +664,36 @@
                                             </div>
                                         </div>
 
-                                        <div
-                                            class=" text-2xl  leading-relaxed text-primary flex justify-between gap-2 lg:flex-row md:flex-row flex-col">
+                                        <div class=" text-2xl  leading-relaxed text-primary flex justify-between gap-2 lg:flex-row md:flex-row flex-col">
                                             Total Amount: <span class="font-semibold"> ₹ 15,210 </span>
                                         </div>
+
+
+                                        @if($type == 'sales' || $type == 'purchase')
+                                            <div class=" w-full flex justify-between lg:flex-row md:flex-row flex-col gap-2 ">
+                                                <div class="font-semibold mt-1.5 text-sm leading-relaxed text-slate-500/80 flex gap-2">
+
+                                                    Amount {{ $type == 'sales' ? 'Received' : 'Paid'}}
+                                                </div>
+                                                <div class="lg:w-[200px] md:w-[200px] w-full flex gap-2 lg:flex-row md:flex-row flex-col">
+                                                    <input type="number" placeholder="Amount (₹) ....."
+                                                           class="lg:w-[100px] md:w-[100px] w-full py-1  disabled:bg-slate-100 disabled:cursor-not-allowed dark:disabled:bg-darkmode-800/50 dark:disabled:border-transparent [&amp;[readonly]]:bg-slate-100 [&amp;[readonly]]:cursor-not-allowed [&amp;[readonly]]:dark:bg-darkmode-800/50 [&amp;[readonly]]:dark:border-transparent transition duration-200 ease-in-out text-sm border-slate-200 focus:border-slate-400 shadow-sm rounded-md placeholder:text-slate-400/90 focus:ring-0 focus:ring-opacity-0 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-0 dark:placeholder:text-slate-500/80 [&amp;[type='file']]:border file:mr-4 file:py-2 file:px-4 file:rounded-l-md file:border-0 file:border-r-[1px] file:border-slate-100/10 file:text-sm file:font-semibold file:bg-slate-100 file:text-slate-500/70 hover:file:bg-200 group-[.form-inline]:flex-1 group-[.input-group]:rounded-none group-[.input-group]:[&amp;:not(:first-child)]:border-l-transparent group-[.input-group]:first:rounded-l group-[.input-group]:last:rounded-r group-[.input-group]:z-10 first:rounded-b-none last:-mt-px last:rounded-t-none focus:z-10 first:md:rounded-r-none first:md:rounded-bl-md last:md:-ml-px last:md:mt-0 last:md:rounded-l-none last:md:rounded-tr-md [&amp;:not(:first-child):not(:last-child)]:-mt-px [&amp;:not(:first-child):not(:last-child)]:rounded-none [&amp;:not(:first-child):not(:last-child)]:md:-ml-px [&amp;:not(:first-child):not(:last-child)]:md:mt-0">
+
+                                                    <select
+                                                        class="lg:w-[100px] md:w-[100px] w-full py-1  disabled:bg-slate-100 disabled:cursor-not-allowed dark:disabled:bg-darkmode-800/50 dark:disabled:border-transparent [&amp;[readonly]]:bg-slate-100 [&amp;[readonly]]:cursor-not-allowed [&amp;[readonly]]:dark:bg-darkmode-800/50 [&amp;[readonly]]:dark:border-transparent transition duration-200 ease-in-out  text-sm border-slate-200 focus:border-slate-400 shadow-sm rounded-md placeholder:text-slate-400/90 focus:ring-0 focus:ring-opacity-0 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-0 dark:placeholder:text-slate-500/80 [&amp;[type='file']]:border file:mr-4 file:py-2 file:px-4 file:rounded-l-md file:border-0 file:border-r-[1px] file:border-slate-100/10 file:text-sm file:font-semibold file:bg-slate-100 file:text-slate-500/70 hover:file:bg-200 group-[.form-inline]:flex-1 group-[.input-group]:rounded-none group-[.input-group]:[&amp;:not(:first-child)]:border-l-transparent group-[.input-group]:first:rounded-l group-[.input-group]:last:rounded-r group-[.input-group]:z-10 first:rounded-b-none last:-mt-px last:rounded-t-none focus:z-10 first:md:rounded-r-none first:md:rounded-bl-md last:md:-ml-px last:md:mt-0 last:md:rounded-l-none last:md:rounded-tr-md [&amp;:not(:first-child):not(:last-child)]:-mt-px [&amp;:not(:first-child):not(:last-child)]:rounded-none [&amp;:not(:first-child):not(:last-child)]:md:-ml-px [&amp;:not(:first-child):not(:last-child)]:md:mt-0">
+                                                        <option value="add">Cash</option>
+                                                        <option value="bank">Bank</option>
+                                                        <option value="cheque">Cheque</option>
+                                                    </select>
+
+                                                </div>
+                                            </div>
+                                            <div class="leading-relaxed text-primary flex justify-between gap-2 lg:flex-row md:flex-row flex-col">
+                                                Balance <span class="font-semibold"> ₹ 1,000 </span>
+                                            </div>
+                                        @endif
+
+
 
                                     </div>
 
@@ -641,6 +711,8 @@
                                         </div>
 
                                     </div>
+
+
 
                                 </div>
 

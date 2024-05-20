@@ -140,7 +140,7 @@
                                             These products are trending
                                         </div>
                                     </div>
-                                    <a class="mt-4 flex items-center border-t border-dashed pt-4 font-medium text-primary" href="#">
+                                    <a class="mt-4 flex items-center border-t  pt-4 font-medium text-primary" href="#">
                                         Explore Products
                                         <i data-tw-merge="" data-lucide="arrow-right" class="stroke-[1] ml-1.5 h-4 w-4"></i>
                                     </a>
@@ -170,7 +170,7 @@
                                             These products are least sold
                                         </div>
                                     </div>
-                                    <a class="mt-4 flex items-center border-t border-dashed pt-4 font-medium text-primary" href="#">
+                                    <a class="mt-4 flex items-center border-t  pt-4 font-medium text-primary" href="#">
                                         View Products
                                         <i data-tw-merge="" data-lucide="arrow-right" class="stroke-[1] ml-1.5 h-4 w-4"></i>
                                     </a>
@@ -200,7 +200,7 @@
                                             These products are running out of stock
                                         </div>
                                     </div>
-                                    <a class="mt-4 flex items-center border-t border-dashed pt-4 font-medium text-primary" href="#">
+                                    <a class="mt-4 flex items-center border-t  pt-4 font-medium text-primary" href="#">
                                         View Products
                                         <i data-tw-merge="" data-lucide="arrow-right" class="stroke-[1] ml-1.5 h-4 w-4"></i>
                                     </a>
@@ -230,7 +230,7 @@
                                             These products are not sold for a long time
                                         </div>
                                     </div>
-                                    <a class="mt-4 flex items-center border-t border-dashed pt-4 font-medium text-primary" href="#">
+                                    <a class="mt-4 flex items-center border-t  pt-4 font-medium text-primary" href="#">
                                         View Products
                                         <i data-tw-merge="" data-lucide="arrow-right" class="stroke-[1] ml-1.5 h-4 w-4"></i>
                                     </a>
@@ -247,7 +247,7 @@
                         <table data-tw-merge="" class="w-full text-left border-separate border-spacing-y-[10px]">
                             <tbody>
                             <tr data-tw-merge="" class="">
-                                <td data-tw-merge="" class="px-5 py-3 border-b dark:border-darkmode-300 box rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
+                                <td data-tw-merge="" class="px-5 py-3 border-[1px] border-slate-300 box rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
                                     <div class="flex items-center">
                                         <i data-tw-merge="" data-lucide="trending-up" class="h-6 w-6 fill-primary/10 stroke-[0.8] text-theme-1"></i>
                                         <div class="ml-3.5">
@@ -260,7 +260,7 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td data-tw-merge="" class="px-5 py-3 border-b dark:border-darkmode-300 box w-60 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
+                                <td data-tw-merge="" class="px-5 py-3 border-[1px] border-slate-300 box w-60 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
                                     <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
                                         Customer Name
                                     </div>
@@ -271,7 +271,7 @@
                                         </div>
                                     </a>
                                 </td>
-                                <td data-tw-merge="" class="px-5 py-3 border-b dark:border-darkmode-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
+                                <td data-tw-merge="" class="px-5 py-3 border-[1px] border-slate-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
                                     <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
                                         Type
                                     </div>
@@ -282,13 +282,13 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td data-tw-merge="" class="px-5 py-3 border-b dark:border-darkmode-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
+                                <td data-tw-merge="" class="px-5 py-3 border-[1px] border-slate-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
                                     <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
                                         Date
                                     </div>
                                     <div class="whitespace-nowrap">12/12/2023</div>
                                 </td>
-                                <td data-tw-merge="" class="px-5 border-b dark:border-darkmode-300 box relative w-20 rounded-l-none rounded-r-none border-x-0 py-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
+                                <td data-tw-merge="" class="px-5 border-[1px] border-slate-300 box relative w-20 rounded-l-none rounded-r-none border-x-0 py-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
                                     <div class="flex items-center justify-center">
                                         <div data-tw-merge="" data-tw-placement="bottom-end" class="dropdown relative h-5"><button data-tw-toggle="dropdown" aria-expanded="false" class="cursor-pointer h-5 w-5 text-slate-500"><i data-tw-merge="" data-lucide="more-vertical" class="stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"></i>
                                             </button>
@@ -305,7 +305,7 @@
                                 </td>
                             </tr>
                             <tr data-tw-merge="" class="">
-                                <td data-tw-merge="" class="px-5 py-3 border-b dark:border-darkmode-300 box rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
+                                <td data-tw-merge="" class="px-5 py-3 border-[1px] border-slate-300 box rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
                                     <div class="flex items-center">
                                         <i data-tw-merge="" data-lucide="trending-down" class="h-6 w-6 fill-primary/10 stroke-[0.8] text-theme-1"></i>
                                         <div class="ml-3.5">
@@ -319,7 +319,7 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td data-tw-merge="" class="px-5 py-3 border-b dark:border-darkmode-300 box w-60 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
+                                <td data-tw-merge="" class="px-5 py-3 border-[1px] border-slate-300 box w-60 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
                                     <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
                                         Vendor Name
                                     </div>
@@ -330,7 +330,7 @@
                                         </div>
                                     </a>
                                 </td>
-                                <td data-tw-merge="" class="px-5 py-3 border-b dark:border-darkmode-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
+                                <td data-tw-merge="" class="px-5 py-3 border-[1px] border-slate-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
                                     <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
                                         Type
                                     </div>
@@ -341,13 +341,13 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td data-tw-merge="" class="px-5 py-3 border-b dark:border-darkmode-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
+                                <td data-tw-merge="" class="px-5 py-3 border-[1px] border-slate-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
                                     <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
                                         Date
                                     </div>
                                     <div class="whitespace-nowrap">24/10/2024</div>
                                 </td>
-                                <td data-tw-merge="" class="px-5 border-b dark:border-darkmode-300 box relative w-20 rounded-l-none rounded-r-none border-x-0 py-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
+                                <td data-tw-merge="" class="px-5 border-[1px] border-slate-300 box relative w-20 rounded-l-none rounded-r-none border-x-0 py-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
                                     <div class="flex items-center justify-center">
                                         <div data-tw-merge="" data-tw-placement="bottom-end" class="dropdown relative h-5"><button data-tw-toggle="dropdown" aria-expanded="false" class="cursor-pointer h-5 w-5 text-slate-500"><i data-tw-merge="" data-lucide="more-vertical" class="stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"></i>
                                             </button>
@@ -364,7 +364,7 @@
                                 </td>
                             </tr>
                             <tr data-tw-merge="" class="">
-                                <td data-tw-merge="" class="px-5 py-3 border-b dark:border-darkmode-300 box rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
+                                <td data-tw-merge="" class="px-5 py-3 border-[1px] border-slate-300 box rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
                                     <div class="flex items-center">
                                         <i data-tw-merge="" data-lucide="trending-up" class="h-6 w-6 fill-primary/10 stroke-[0.8] text-theme-1"></i>
                                         <div class="ml-3.5">
@@ -377,7 +377,7 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td data-tw-merge="" class="px-5 py-3 border-b dark:border-darkmode-300 box w-60 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
+                                <td data-tw-merge="" class="px-5 py-3 border-[1px] border-slate-300 box w-60 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
                                     <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
                                         Customer Name
                                     </div>
@@ -388,7 +388,7 @@
                                         </div>
                                     </a>
                                 </td>
-                                <td data-tw-merge="" class="px-5 py-3 border-b dark:border-darkmode-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
+                                <td data-tw-merge="" class="px-5 py-3 border-[1px] border-slate-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
                                     <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
                                         Type
                                     </div>
@@ -399,13 +399,13 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td data-tw-merge="" class="px-5 py-3 border-b dark:border-darkmode-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
+                                <td data-tw-merge="" class="px-5 py-3 border-[1px] border-slate-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
                                     <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
                                         Date
                                     </div>
                                     <div class="whitespace-nowrap">12/12/2023</div>
                                 </td>
-                                <td data-tw-merge="" class="px-5 border-b dark:border-darkmode-300 box relative w-20 rounded-l-none rounded-r-none border-x-0 py-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
+                                <td data-tw-merge="" class="px-5 border-[1px] border-slate-300 box relative w-20 rounded-l-none rounded-r-none border-x-0 py-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
                                     <div class="flex items-center justify-center">
                                         <div data-tw-merge="" data-tw-placement="bottom-end" class="dropdown relative h-5"><button data-tw-toggle="dropdown" aria-expanded="false" class="cursor-pointer h-5 w-5 text-slate-500"><i data-tw-merge="" data-lucide="more-vertical" class="stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"></i>
                                             </button>
@@ -422,7 +422,7 @@
                                 </td>
                             </tr>
                             <tr data-tw-merge="" class="">
-                                <td data-tw-merge="" class="px-5 py-3 border-b dark:border-darkmode-300 box rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
+                                <td data-tw-merge="" class="px-5 py-3 border-[1px] border-slate-300 box rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
                                     <div class="flex items-center">
                                         <i data-tw-merge="" data-lucide="trending-down" class="h-6 w-6 fill-primary/10 stroke-[0.8] text-theme-1"></i>
                                         <div class="ml-3.5">
@@ -436,7 +436,7 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td data-tw-merge="" class="px-5 py-3 border-b dark:border-darkmode-300 box w-60 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
+                                <td data-tw-merge="" class="px-5 py-3 border-[1px] border-slate-300 box w-60 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
                                     <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
                                         Vendor Name
                                     </div>
@@ -447,7 +447,7 @@
                                         </div>
                                     </a>
                                 </td>
-                                <td data-tw-merge="" class="px-5 py-3 border-b dark:border-darkmode-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
+                                <td data-tw-merge="" class="px-5 py-3 border-[1px] border-slate-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
                                     <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
                                         Type
                                     </div>
@@ -458,13 +458,13 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td data-tw-merge="" class="px-5 py-3 border-b dark:border-darkmode-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
+                                <td data-tw-merge="" class="px-5 py-3 border-[1px] border-slate-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
                                     <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
                                         Date
                                     </div>
                                     <div class="whitespace-nowrap">24/10/2024</div>
                                 </td>
-                                <td data-tw-merge="" class="px-5 border-b dark:border-darkmode-300 box relative w-20 rounded-l-none rounded-r-none border-x-0 py-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
+                                <td data-tw-merge="" class="px-5 border-[1px] border-slate-300 box relative w-20 rounded-l-none rounded-r-none border-x-0 py-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
                                     <div class="flex items-center justify-center">
                                         <div data-tw-merge="" data-tw-placement="bottom-end" class="dropdown relative h-5"><button data-tw-toggle="dropdown" aria-expanded="false" class="cursor-pointer h-5 w-5 text-slate-500"><i data-tw-merge="" data-lucide="more-vertical" class="stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"></i>
                                             </button>
@@ -512,25 +512,25 @@
                                 </div>
                             </div>
                             <div class="overflow-auto xl:overflow-visible">
-                                <table class="w-full text-left border-b border-slate-200/60">
+                                <table class="w-full text-left border-[1px] border-slate-300 border-collapse">
                                     <thead class="">
                                     <tr class="">
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
                                             Customer Name
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
                                             Transaction ID
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
                                             Status
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
                                             Amount
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-t border-slate-200/60 bg-slate-50 py-4 font-medium text-slate-500">
+                                        <td class="px-5 border-[1px] border-slate-300 bg-slate-50 py-4 font-medium text-slate-500">
                                             Date
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 w-36 border-t border-slate-200/60 bg-slate-50 py-4 text-center font-medium text-slate-500">
+                                        <td class="px-5 w-36 border-[1px] border-slate-300 bg-slate-50 py-4 text-center font-medium text-slate-500">
                                             Action
                                         </td>
                                     </tr>
@@ -538,7 +538,7 @@
                                     <tbody>
                                     <tr class="[&amp;_td]:last:border-b-0">
 
-                                        <td class="px-5 border-b dark:border-darkmode-300 w-44 border-dashed py-4 dark:bg-darkmode-600">
+                                        <td class="px-5 border-[1px] border-slate-300 w-44  py-4 dark:bg-darkmode-600">
                                             <div class="flex items-center">
                                                 <div class="image-fit zoom-in h-9 w-9">
                                                     <img data-placement="top" src="{{asset('assets/images/users/user4.jpeg')}}" alt="Tailwise - Admin Dashboard Template" class="tooltip cursor-pointer rounded-full shadow-[0px_0px_0px_2px_#fff,_1px_1px_5px_rgba(0,0,0,0.32)] dark:shadow-[0px_0px_0px_2px_#3f4865,_1px_1px_5px_rgba(0,0,0,0.32)]">
@@ -556,7 +556,7 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                        <td class="px-5 border-[1px] border-slate-300  py-4 dark:bg-darkmode-600">
                                             <a class="flex items-center text-primary" href="#">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" class="lucide lucide-external-link h-3.5 w-3.5 stroke-[1.7]"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" x2="21" y1="14" y2="3"></line></svg>
                                                 <div class="ml-1.5 whitespace-nowrap text-[13px] underline decoration-primary/30 decoration-dotted underline-offset-[3px]">
@@ -564,7 +564,7 @@
                                                 </div>
                                             </a>
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                        <td class="px-5 border-[1px] border-slate-300  py-4 dark:bg-darkmode-600">
                                             <div class="flex items-center text-success">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="package" class="lucide lucide-package h-3.5 w-3.5 stroke-[1.7]"><path d="m7.5 4.27 9 5.15"></path><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.3 7 8.7 5 8.7-5"></path><path d="M12 22V12"></path></svg>
                                                 <div class="ml-1.5 whitespace-nowrap">
@@ -572,17 +572,17 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                        <td class="px-5 border-[1px] border-slate-300  py-4 dark:bg-darkmode-600">
                                             <div class="whitespace-nowrap">
                                                 ₹1.186
                                             </div>
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                        <td class="px-5 border-[1px] border-slate-300  py-4 dark:bg-darkmode-600">
                                             <div class="whitespace-nowrap">
                                                 Sun Jul 2020
                                             </div>
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 relative border-dashed py-4 dark:bg-darkmode-600">
+                                        <td class="px-5 border-[1px] border-slate-300 relative  py-4 dark:bg-darkmode-600">
                                             <div class="flex items-center justify-center">
                                                 <div data-tw-placement="bottom-end" class="dropdown relative h-5"><button data-tw-toggle="dropdown" aria-expanded="false" class="cursor-pointer h-5 w-5 text-slate-500"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="more-vertical" class="lucide lucide-more-vertical stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
                                                     </button>
@@ -600,7 +600,7 @@
                                     </tr>
                                     <tr class="[&amp;_td]:last:border-b-0">
 
-                                        <td class="px-5 border-b dark:border-darkmode-300 w-44 border-dashed py-4 dark:bg-darkmode-600">
+                                        <td class="px-5 border-[1px] border-slate-300 w-44  py-4 dark:bg-darkmode-600">
                                             <div class="flex items-center">
                                                 <div class="image-fit zoom-in h-9 w-9">
                                                     <img data-placement="top" src="{{asset('assets/images/users/user4.jpeg')}}" alt="Tailwise - Admin Dashboard Template" class="tooltip cursor-pointer rounded-full shadow-[0px_0px_0px_2px_#fff,_1px_1px_5px_rgba(0,0,0,0.32)] dark:shadow-[0px_0px_0px_2px_#3f4865,_1px_1px_5px_rgba(0,0,0,0.32)]">
@@ -618,7 +618,7 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                        <td class="px-5 border-[1px] border-slate-300  py-4 dark:bg-darkmode-600">
                                             <a class="flex items-center text-info" href="#">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" class="lucide lucide-external-link h-3.5 w-3.5 stroke-[1.7]"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" x2="21" y1="14" y2="3"></line></svg>
                                                 <div class="ml-1.5 whitespace-nowrap text-[13px] underline decoration-info/30 decoration-dotted underline-offset-[3px]">
@@ -626,7 +626,7 @@
                                                 </div>
                                             </a>
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                        <td class="px-5 border-[1px] border-slate-300  py-4 dark:bg-darkmode-600">
                                             <div class="flex items-center text-info">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="package-x" class="lucide lucide-package-x h-3.5 w-3.5 stroke-[1.7]"><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"></path><path d="m7.5 4.27 9 5.15"></path><polyline points="3.29 7 12 12 20.71 7"></polyline><line x1="12" x2="12" y1="22" y2="12"></line><path d="m17 13 5 5m-5 0 5-5"></path></svg>
                                                 <div class="ml-1.5 whitespace-nowrap">
@@ -634,20 +634,20 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                        <td class="px-5 border-[1px] border-slate-300  py-4 dark:bg-darkmode-600">
                                             <div class="whitespace-nowrap">
                                                 ₹1.373
                                             </div>
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                        <td class="px-5 border-[1px] border-slate-300  py-4 dark:bg-darkmode-600">
                                             <div class="whitespace-nowrap">
                                                 Thu Feb 2022
                                             </div>
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 relative border-dashed py-4 dark:bg-darkmode-600">
+                                        <td class="px-5 border-[1px] border-slate-300 relative  py-4 dark:bg-darkmode-600">
                                             <div class="flex items-center justify-center">
                                                 <div data-tw-placement="bottom-end" class="dropdown relative h-5"><button data-tw-toggle="dropdown" aria-expanded="false" class="cursor-pointer h-5 w-5 text-slate-500"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="more-vertical" class="lucide lucide-more-vertical stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
-                                                    </button>
+                                                     </button>
                                                     <div data-transition="" data-selector=".show" data-enter="transition-all ease-linear duration-150" data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1" data-enter-to="!mt-1 visible opacity-100 translate-y-0" data-leave="transition-all ease-linear duration-150" data-leave-from="!mt-1 visible opacity-100 translate-y-0" data-leave-to="absolute !mt-5 invisible opacity-0 translate-y-1" class="dropdown-menu absolute z-[9999] hidden invisible opacity-0 translate-y-1" data-state="leave" style="display: none;">
                                                         <div class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
                                                             <a class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check-square" class="lucide lucide-check-square stroke-[1] mr-2 h-4 w-4"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
@@ -662,7 +662,7 @@
                                     </tr>
                                     <tr class="[&amp;_td]:last:border-b-0"  >
 
-                                        <td class="px-5 border-b dark:border-darkmode-300 w-44 border-dashed py-4 dark:bg-darkmode-600">
+                                        <td class="px-5 border-[1px] border-slate-300 w-44  py-4 dark:bg-darkmode-600">
                                             <div class="flex items-center">
                                                 <div class="image-fit zoom-in h-9 w-9">
                                                     <img data-placement="top" src="{{asset('assets/images/users/user2.jpeg')}}" alt="Tailwise - Admin Dashboard Template" class="tooltip cursor-pointer rounded-full shadow-[0px_0px_0px_2px_#fff,_1px_1px_5px_rgba(0,0,0,0.32)] dark:shadow-[0px_0px_0px_2px_#3f4865,_1px_1px_5px_rgba(0,0,0,0.32)]">
@@ -680,7 +680,7 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                        <td class="px-5 border-[1px] border-slate-300  py-4 dark:bg-darkmode-600">
                                             <a class="flex items-center text-warning" href="#">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" class="lucide lucide-external-link h-3.5 w-3.5 stroke-[1.7]"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" x2="21" y1="14" y2="3"></line></svg>
                                                 <div class="ml-1.5 whitespace-nowrap text-[13px] underline decoration-primary/30 decoration-dotted underline-offset-[3px]">
@@ -688,7 +688,7 @@
                                                 </div>
                                             </a>
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                        <td class="px-5 border-[1px] border-slate-300  py-4 dark:bg-darkmode-600">
                                             <div class="flex items-center text-warning">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="hourglass" class="lucide lucide-hourglass h-3.5 w-3.5 stroke-[1.7]"><path d="M5 22h14"></path><path d="M5 2h14"></path><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"></path><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"></path></svg>
                                                 <div class="ml-1.5 whitespace-nowrap">
@@ -696,17 +696,17 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                        <td class="px-5 border-[1px] border-slate-300  py-4 dark:bg-darkmode-600">
                                             <div class="whitespace-nowrap">
                                                 ₹1.838
                                             </div>
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                        <td class="px-5 border-[1px] border-slate-300  py-4 dark:bg-darkmode-600">
                                             <div class="whitespace-nowrap">
                                                 Sat Aug 2021
                                             </div>
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 relative border-dashed py-4 dark:bg-darkmode-600">
+                                        <td class="px-5 border-[1px] border-slate-300 relative  py-4 dark:bg-darkmode-600">
                                             <div class="flex items-center justify-center">
                                                 <div data-tw-placement="bottom-end" class="dropdown relative h-5"><button data-tw-toggle="dropdown" aria-expanded="false" class="cursor-pointer h-5 w-5 text-slate-500"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="more-vertical" class="lucide lucide-more-vertical stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
                                                     </button>
@@ -724,7 +724,7 @@
                                     </tr>
                                     <tr class="[&amp;_td]:last:border-b-0"  >
 
-                                        <td class="px-5 border-b dark:border-darkmode-300 w-44 border-dashed py-4 dark:bg-darkmode-600">
+                                        <td class="px-5 border-[1px] border-slate-300 w-44  py-4 dark:bg-darkmode-600">
                                             <div class="flex items-center">
                                                 <div class="image-fit zoom-in h-9 w-9">
                                                     <img data-placement="top" src="{{asset('assets/images/users/user2.jpeg')}}" alt="Tailwise - Admin Dashboard Template" class="tooltip cursor-pointer rounded-full shadow-[0px_0px_0px_2px_#fff,_1px_1px_5px_rgba(0,0,0,0.32)] dark:shadow-[0px_0px_0px_2px_#3f4865,_1px_1px_5px_rgba(0,0,0,0.32)]">
@@ -742,7 +742,7 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                        <td class="px-5 border-[1px] border-slate-300  py-4 dark:bg-darkmode-600">
                                             <a class="flex items-center text-danger" href="#">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" class="lucide lucide-external-link h-3.5 w-3.5 stroke-[1.7]"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" x2="21" y1="14" y2="3"></line></svg>
                                                 <div class="ml-1.5 whitespace-nowrap text-[13px] underline decoration-primary/30 decoration-dotted underline-offset-[3px]">
@@ -750,7 +750,7 @@
                                                 </div>
                                             </a>
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                        <td class="px-5 border-[1px] border-slate-300  py-4 dark:bg-darkmode-600">
                                             <div class="flex items-center text-danger">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="file-x2" class="lucide lucide-file-x2 h-3.5 w-3.5 stroke-[1.7]"><path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v4"></path><path d="M14 2v6h6"></path><path d="m3 12.5 5 5"></path><path d="m8 12.5-5 5"></path></svg>
                                                 <div class="ml-1.5 whitespace-nowrap">
@@ -758,17 +758,17 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                        <td class="px-5 border-[1px] border-slate-300  py-4 dark:bg-darkmode-600">
                                             <div class="whitespace-nowrap">
                                                 ₹1.838
                                             </div>
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 border-dashed py-4 dark:bg-darkmode-600">
+                                        <td class="px-5 border-[1px] border-slate-300  py-4 dark:bg-darkmode-600">
                                             <div class="whitespace-nowrap">
                                                 Sat Aug 2021
                                             </div>
                                         </td>
-                                        <td class="px-5 border-b dark:border-darkmode-300 relative border-dashed py-4 dark:bg-darkmode-600">
+                                        <td class="px-5 border-[1px] border-slate-300 relative  py-4 dark:bg-darkmode-600">
                                             <div class="flex items-center justify-center">
                                                 <div data-tw-placement="bottom-end" class="dropdown relative h-5"><button data-tw-toggle="dropdown" aria-expanded="false" class="cursor-pointer h-5 w-5 text-slate-500"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="more-vertical" class="lucide lucide-more-vertical stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
                                                     </button>
