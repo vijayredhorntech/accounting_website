@@ -13,6 +13,7 @@
     <!-- BEGIN: CSS Assets-->
     <link rel="stylesheet" href="{{asset('assets/dist/css/vendors/tippy.css')}}">
     <link rel="stylesheet" href="{{asset('assets/dist/css/app.css')}}">
+    <script src="https://kit.fontawesome.com/4e2c7ef5ef.js" crossorigin="anonymous"></script>
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles

@@ -616,38 +616,50 @@
                             </div>
                             <div data-tw-merge="" class="overflow-y-auto flex-1 p-0">
                                 <div class="flex flex-col gap-0.5 p-3">
-                                    <a class="flex items-center rounded-xl px-3 py-2.5 hover:bg-slate-100/80" href="#">
-                                        <div>
-                                            <div class="image-fit h-11 w-11 overflow-hidden rounded-full border-2 border-slate-200/70">
-                                                <img src="{{asset('assets/images/users/user4.jpeg')}}" alt="User Name">
+                                    <div class="flex items-center justify-between rounded-xl px-3 py-2.5 hover:bg-slate-100/80">
+                                        <div class="flex items-center">
+                                            <div>
+                                                <div class="image-fit h-11 w-11 overflow-hidden rounded-full border-2 border-slate-200/70">
+                                                    <img src="{{asset('assets/images/users/user4.jpeg')}}" alt="User Name">
+                                                </div>
+                                            </div>
+                                            <div class="sm:ml-5">
+                                                <div class="font-medium">Purchase Request</div>
+                                                <div class="mt-0.5 text-slate-500">
+                                                    Ask for product purchase
+                                                </div>
+                                                <div class="mt-1.5 text-xs text-slate-500">
+                                                    2 hours ago
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="sm:ml-5">
-                                            <div class="font-medium">Purchase Request</div>
-                                            <div class="mt-0.5 text-slate-500">
-                                                Ask for product purchase
+
+                                        <button data-tw-merge="" class="transition duration-200 border shadow-sm items-center justify-center py-1 px-3 rounded-md font-normal text-xs cursor-pointer bg-primary focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&:hover:not(:disabled)]:bg-opacity-90 [&:hover:not(:disabled)]:border-opacity-90 [&:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed border-secondary text-slate-500 dark:border-darkmode-100/40 dark:text-slate-300 [&:hover:not(:disabled)]:bg-secondary/20 [&:hover:not(:disabled)]:dark:bg-darkmode-100/10 hidden sm:flex"><i data-tw-merge="" data-lucide="shield-check" class="stroke-[1] mr-2 h-4 w-4"></i>
+                                            Mark as Read
+                                        </button>
+                                    </div>
+                                    <div class="flex items-center justify-between rounded-xl px-3 py-2.5 hover:bg-slate-100/80">
+                                        <div class="flex items-center">
+                                            <div>
+                                                <div class="image-fit h-11 w-11 overflow-hidden rounded-full border-2 border-slate-200/70">
+                                                    <img src="{{asset('assets/images/users/user3.jpeg')}}" alt="User Name">
+                                                </div>
                                             </div>
-                                            <div class="mt-1.5 text-xs text-slate-500">
-                                                2 hours ago
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a class="flex items-center rounded-xl px-3 py-2.5 hover:bg-slate-100/80" href="#">
-                                        <div>
-                                            <div class="image-fit h-11 w-11 overflow-hidden rounded-full border-2 border-slate-200/70">
-                                                <img src="{{asset('assets/images/users/user2.jpeg')}}" alt="User Name">
-                                            </div>
-                                        </div>
-                                        <div class="sm:ml-5">
-                                            <div class="font-medium">Payment Request</div>
-                                            <div class="mt-0.5 text-slate-500">
-                                                Ask for payment
-                                            </div>
-                                            <div class="mt-1.5 text-xs text-slate-500">
-                                                1 hours ago
+                                            <div class="sm:ml-5">
+                                                <div class="font-medium">Purchase Order</div>
+                                                <div class="mt-0.5 text-slate-500">
+                                                    Ask for product Order
+                                                </div>
+                                                <div class="mt-1.5 text-xs text-slate-500">
+                                                    1 day ago
+                                                </div>
                                             </div>
                                         </div>
-                                    </a>
+
+                                        <button data-tw-merge="" class="transition duration-200 border shadow-sm items-center justify-center py-1 px-3 rounded-md font-normal text-xs cursor-pointer bg-primary focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&:hover:not(:disabled)]:bg-opacity-90 [&:hover:not(:disabled)]:border-opacity-90 [&:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed border-secondary text-slate-500 dark:border-darkmode-100/40 dark:text-slate-300 [&:hover:not(:disabled)]:bg-secondary/20 [&:hover:not(:disabled)]:dark:bg-darkmode-100/10 hidden sm:flex"><i data-tw-merge="" data-lucide="shield-check" class="stroke-[1] mr-2 h-4 w-4"></i>
+                                            Mark as Read
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
