@@ -5,7 +5,7 @@
                 <div class="col-span-12 sm:col-span-10 sm:col-start-2">
                     <div class="flex flex-col gap-y-3 md:h-10 md:flex-row md:items-center">
                         <div class="text-base font-medium group-[.mode--light]:text-white">
-                           New {{$type}} invoice
+                           New {{ucfirst($type)}} invoice
                         </div>
                         <div class="flex flex-col gap-x-3 gap-y-2 sm:flex-row md:ml-auto">
                             <a href="{{route('quotation')}}" class="transition duration-200 border shadow-sm inline-flex items-center justify-center py-2 px-3 rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;:hover:not(:disabled)]:bg-opacity-90 [&amp;:hover:not(:disabled)]:border-opacity-90 [&amp;:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed bg-primary border-primary text-white dark:border-primary group-[.mode--light]:!border-transparent group-[.mode--light]:!bg-white/[0.12] group-[.mode--light]:!text-slate-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="pen-line" class="lucide lucide-pen-line mr-2 h-4 w-4 stroke-[1.3]"><path d="M12 20h9"></path><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg>
@@ -42,7 +42,7 @@
                                     <div class="grid grid-cols-2 gap-2 xl:mt-0 ">
                                         <div class="flex flex-col ">
                                             <div class="mt-1.5 text-xs leading-relaxed text-slate-500/80">
-                                                <div class="font-normal">Quotation Number</div>
+                                                <div class="font-normal">{{ucfirst($type)}} Invoice Number</div>
                                             </div>
                                             <input type="number" placeholder="Quotation number....."
                                                    class="rounded-l-md transition duration-200 ease-in-out w-full text-sm border-slate-300 focus:border-slate-400 shadow-sm  placeholder:text-slate-400/90 focus:ring-0 focus:ring-opacity-0"
@@ -51,7 +51,7 @@
                                         </div>
                                         <div class="flex flex-col ">
                                             <div class="mt-1.5 text-xs leading-relaxed text-slate-500/80">
-                                                <div class="font-normal">Quotation Date</div>
+                                                <div class="font-normal">{{ucfirst($type)}} Invoice Date</div>
                                             </div>
                                             <input type="date" placeholder="Quotation date....."
                                                    class="rounded-r-md transition duration-200 ease-in-out w-full text-sm border-slate-300 focus:border-slate-400 shadow-sm  placeholder:text-slate-400/90 focus:ring-0 focus:ring-opacity-0"
