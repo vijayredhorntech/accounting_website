@@ -146,6 +146,14 @@ Route::middleware([
 
 
 
+//    account solution routes here
+    Route::get('/cash-bank', function () {
+        return view('accounts.cash-bank');
+    })->name('cash-bank');
+
+
+
+
 
 
 });

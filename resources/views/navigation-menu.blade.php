@@ -108,8 +108,6 @@
                     </ul>
                     <!-- END: Second Child -->
                 </li>
-
-
                 <li class="side-menu__divider">
                     Invoices
                 </li>
@@ -168,9 +166,6 @@
                     </ul>
                     <!-- END: Second Child -->
                 </li>
-
-
-
                 <li>
                     <a href="javascript:;" class="side-menu__link ">
                         <i data-tw-merge="" data-lucide="shopping-bag" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
@@ -217,6 +212,7 @@
                     <!-- END: Second Child -->
                 </li>
 
+
                 <li class="side-menu__divider">
                     REPORTS
                 </li>
@@ -239,7 +235,7 @@
                     <!-- BEGIN: Second Child -->
                     <ul class="hidden">
                         <li>
-                            <a href="echo-dashboard-overview-2.html" class="side-menu__link ">
+                            <a href="{{route('cash-bank')}}" class="side-menu__link ">
                                 <i data-tw-merge="" data-lucide="key" class="stroke-[1] w-5 h-5 side-menu__link__icon"></i>
                                 <div class="side-menu__link__title">Cash & Bank</div>
                             </a>
