@@ -152,6 +152,14 @@ Route::middleware([
     })->name('cash-bank');
 
 
+    Route::get('/expenses', function () {
+        return view('accounts.expense.index');
+    })->name('expenses');
+    Route::get('/create-expense', function () {
+        return view('accounts.expense.create');
+    })->name('create-expense');
+
+
 
 
 
