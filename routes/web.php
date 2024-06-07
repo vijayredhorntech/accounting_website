@@ -18,6 +18,9 @@ Route::middleware([
 
 
     Route::get('/dashboard', function () {
+
+
+
         return view('dashboard');
     })->name('dashboard');
 
@@ -151,7 +154,6 @@ Route::middleware([
         return view('accounts.cash-bank');
     })->name('cash-bank');
 
-
     Route::get('/expenses', function () {
         return view('accounts.expense.index');
     })->name('expenses');
@@ -159,6 +161,11 @@ Route::middleware([
         return view('accounts.expense.create');
     })->name('create-expense');
 
+
+//    profile settings route here
+    Route::get('/profile-settings', function () {
+        return view('profile.index');
+    })->name('profile-settings');
 
 
 
