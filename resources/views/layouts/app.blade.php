@@ -281,7 +281,6 @@
 
 
 @stack('modals')
-
 @livewireScripts
 <!-- BEGIN: Vendor JS Assets-->
 <script src="{{asset('assets/dist/js/vendors/dom.js')}}"></script>
