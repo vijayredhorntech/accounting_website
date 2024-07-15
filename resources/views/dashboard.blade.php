@@ -38,7 +38,7 @@
                                               'value'=>'247,220',
                                               'percentage'=>'12%',
                                               'text'=>'Account Balance',
-                                              'growth'=> false
+                                              'growth'=> true
                                           ],
                                          [
                                             'icon'=>'corner-left-up',
@@ -73,7 +73,8 @@
                                        ]
                                 @endphp
                                 @foreach($generalReportData as $data)
-                                    <div class="relative col-span-5 flex-1 overflow-hidden rounded-[0.6rem] {{$loop->iteration==1?'border-0 border-slate-200/60 bg-slate-50 bg-gradient-to-b from-theme-2/90 to-theme-1/[0.85] p-5 before:absolute before:right-0 before:top-0 before:-mr-[62%] before:h-[130%] before:w-full before:rotate-45 before:bg-gradient-to-b before:from-black/[0.15] before:to-transparent': 'border bg-slate-50/50'}}  p-5 sm:col-span-3 xl:col-span-1">
+                                    <div
+                                        class="relative col-span-5 flex-1 overflow-hidden rounded-[0.6rem] {{$loop->iteration==1?'border-0 border-slate-200/60 bg-slate-50 bg-gradient-to-b from-theme-2/90 to-theme-1/[0.85] p-5 before:absolute before:right-0 before:top-0 before:-mr-[62%] before:h-[130%] before:w-full before:rotate-45 before:bg-gradient-to-b before:from-black/[0.15] before:to-transparent': 'border bg-slate-50/50'}}  p-5 sm:col-span-3 xl:col-span-1">
                                         <div
                                             class="flex h-12 w-12 items-center justify-center rounded-full border  {{$loop->iteration==1?'border-white/10 bg-white/10':'border-primary/10 bg-primary/10'}}">
                                             <i data-tw-merge="" data-lucide="{{$data['icon']}}"
@@ -123,6 +124,7 @@
                                                class="stroke-[1] w-5 h-5 group-[.primary]:text-primary group-[.primary]:fill-primary/10 group-[.success]:text-success group-[.success]:fill-success/10"></i>
                                         </div>
                                         <div class="ml-auto flex">
+
                                             <div class="image-fit zoom-in h-8 w-8">
                                                 <img
                                                     class="rounded-full shadow-[0px_0px_0px_2px_#fff,_1px_1px_5px_rgba(0,0,0,0.32)] dark:shadow-[0px_0px_0px_2px_#3f4865,_1px_1px_5px_rgba(0,0,0,0.32)]"
@@ -289,338 +291,124 @@
                     <div class="mt-2 overflow-auto lg:overflow-visible">
                         <table data-tw-merge="" class="w-full text-left border-separate border-spacing-y-[10px]">
                             <tbody>
-                            <tr data-tw-merge="" class="">
-                                <td data-tw-merge=""
-                                    class="px-5 py-3 border-[1px] border-slate-300 box rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
-                                    <div class="flex items-center">
-                                        <i data-tw-merge="" data-lucide="trending-up"
-                                           class="h-6 w-6 fill-primary/10 stroke-[0.8] text-theme-1"></i>
-                                        <div class="ml-3.5">
-                                            <a class="whitespace-nowrap font-medium" href="#">
-                                                IVR/20240301/IX/VII/2645514417
-                                            </a>
-                                            <div class="mt-1 whitespace-nowrap text-xs text-slate-500">
-                                                Sales Order
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td data-tw-merge=""
-                                    class="px-5 py-3 border-[1px] border-slate-300 box w-60 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
-                                    <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
-                                        Customer Name
-                                    </div>
-                                    <a class="flex items-center text-primary" href="#">
-                                        <i data-tw-merge="" data-lucide="user" class="h-3.5 w-3.5 stroke-[1.7]"></i>
-                                        <div class="ml-1.5 whitespace-nowrap">
-                                            Leonardo DiCaprio
-                                        </div>
-                                    </a>
-                                </td>
-                                <td data-tw-merge=""
-                                    class="px-5 py-3 border-[1px] border-slate-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
-                                    <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
-                                        Type
-                                    </div>
-                                    <div class="flex items-center text-success">
-                                        <i data-tw-merge="" data-lucide="package-search"
-                                           class="h-3.5 w-3.5 stroke-[1.7]"></i>
-                                        <div class="ml-1.5 whitespace-nowrap">
-                                            To Receive
-                                        </div>
-                                    </div>
-                                </td>
-                                <td data-tw-merge=""
-                                    class="px-5 py-3 border-[1px] border-slate-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
-                                    <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
-                                        Date
-                                    </div>
-                                    <div class="whitespace-nowrap">12/12/2023</div>
-                                </td>
-                                <td data-tw-merge=""
-                                    class="px-5 border-[1px] border-slate-300 box relative w-20 rounded-l-none rounded-r-none border-x-0 py-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
-                                    <div class="flex items-center justify-center">
-                                        <div data-tw-merge="" data-tw-placement="bottom-end"
-                                             class="dropdown relative h-5">
-                                            <button data-tw-toggle="dropdown" aria-expanded="false"
-                                                    class="cursor-pointer h-5 w-5 text-slate-500"><i data-tw-merge=""
-                                                                                                     data-lucide="more-vertical"
-                                                                                                     class="stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"></i>
-                                            </button>
-                                            <div data-transition="" data-selector=".show"
-                                                 data-enter="transition-all ease-linear duration-150"
-                                                 data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                 data-enter-to="!mt-1 visible opacity-100 translate-y-0"
-                                                 data-leave="transition-all ease-linear duration-150"
-                                                 data-leave-from="!mt-1 visible opacity-100 translate-y-0"
-                                                 data-leave-to="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                 class="dropdown-menu absolute z-[9999] hidden">
-                                                <div data-tw-merge=""
-                                                     class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                    <a class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                            data-tw-merge="" data-lucide="wallet-cards"
-                                                            class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                        View Details</a>
-                                                    <a class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                            data-tw-merge="" data-lucide="printer"
-                                                            class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                        Print Invoice</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr data-tw-merge="" class="">
-                                <td data-tw-merge=""
-                                    class="px-5 py-3 border-[1px] border-slate-300 box rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
-                                    <div class="flex items-center">
-                                        <i data-tw-merge="" data-lucide="trending-down"
-                                           class="h-6 w-6 fill-primary/10 stroke-[0.8] text-theme-1"></i>
-                                        <div class="ml-3.5">
-                                            <a class="whitespace-nowrap font-medium" href="#">
-                                                IVR/202asdhkj/9979?//HKHFS
-                                            </a>
-                                            <div class="mt-1 whitespace-nowrap text-xs text-slate-500">
+                            @php
+                                $invoiceData=[
+                                                [
+                                                    'id'=>1,
+                                                    'invoice_number'=>'IVR/20240301/IX/VII/2645514417',
+                                                    'invoice_type'=>'Sales',
+                                                    'customer_name'=>'Leonardo DiCaprio',
+                                                    'date'=>'12/12/2023'
+                                                ],
+                                                [
+                                                    'id'=>2,
+                                                    'invoice_number'=>'KLSJD?09403/LSKDJMCLKSMLD',
+                                                    'invoice_type'=>'Purchase',
+                                                    'customer_name'=>'James Bond',
+                                                    'date'=>'10/10/2023'
+                                                ],
+                                                [
+                                                    'id'=>3,
+                                                    'invoice_number'=>'DJLSKJLDS/0384/03548032/JLKDSJDLS',
+                                                    'invoice_type'=>'Purchase',
+                                                    'customer_name'=>'James Gunn',
+                                                    'date'=>'08/09/2023'
+                                                ],
+                                                [
+                                                    'id'=>4,
+                                                    'invoice_number'=>'LKJDLSJ/02548/JSDJLSK/GJEJL/8080',
+                                                    'invoice_type'=>'Sales',
+                                                    'customer_name'=>'Smith',
+                                                    'date'=>'06/12/2023'
+                                                ],
+                                            ]
 
-                                                Purchase Order
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td data-tw-merge=""
-                                    class="px-5 py-3 border-[1px] border-slate-300 box w-60 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
-                                    <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
-                                        Vendor Name
-                                    </div>
-                                    <a class="flex items-center text-primary" href="#">
-                                        <i data-tw-merge="" data-lucide="user-check"
-                                           class="h-3.5 w-3.5 stroke-[1.7]"></i>
-                                        <div class="ml-1.5 whitespace-nowrap">
-                                            Leonardo DiCaprio
-                                        </div>
-                                    </a>
-                                </td>
-                                <td data-tw-merge=""
-                                    class="px-5 py-3 border-[1px] border-slate-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
-                                    <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
-                                        Type
-                                    </div>
-                                    <div class="flex items-center text-danger">
-                                        <i data-tw-merge="" data-lucide="package-search"
-                                           class="h-3.5 w-3.5 stroke-[1.7]"></i>
-                                        <div class="ml-1.5 whitespace-nowrap">
-                                            To pay
-                                        </div>
-                                    </div>
-                                </td>
-                                <td data-tw-merge=""
-                                    class="px-5 py-3 border-[1px] border-slate-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
-                                    <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
-                                        Date
-                                    </div>
-                                    <div class="whitespace-nowrap">24/10/2024</div>
-                                </td>
-                                <td data-tw-merge=""
-                                    class="px-5 border-[1px] border-slate-300 box relative w-20 rounded-l-none rounded-r-none border-x-0 py-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
-                                    <div class="flex items-center justify-center">
-                                        <div data-tw-merge="" data-tw-placement="bottom-end"
-                                             class="dropdown relative h-5">
-                                            <button data-tw-toggle="dropdown" aria-expanded="false"
-                                                    class="cursor-pointer h-5 w-5 text-slate-500"><i data-tw-merge=""
-                                                                                                     data-lucide="more-vertical"
-                                                                                                     class="stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"></i>
-                                            </button>
-                                            <div data-transition="" data-selector=".show"
-                                                 data-enter="transition-all ease-linear duration-150"
-                                                 data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                 data-enter-to="!mt-1 visible opacity-100 translate-y-0"
-                                                 data-leave="transition-all ease-linear duration-150"
-                                                 data-leave-from="!mt-1 visible opacity-100 translate-y-0"
-                                                 data-leave-to="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                 class="dropdown-menu absolute z-[9999] hidden">
-                                                <div data-tw-merge=""
-                                                     class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                    <a class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                            data-tw-merge="" data-lucide="wallet-cards"
-                                                            class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                        View Details</a>
-                                                    <a class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                            data-tw-merge="" data-lucide="printer"
-                                                            class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                        Print Invoice</a>
+                            @endphp
+                            @foreach($invoiceData as $data)
+                                <tr data-tw-merge="" class="">
+                                    <td data-tw-merge=""
+                                        class="px-5 py-3 border-[1px] border-slate-300 box rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
+                                        <div class="flex items-center">
+                                            <i data-tw-merge="" data-lucide="trending-{{$data['invoice_type']=='Sales'?'up':'down'}}"
+                                               class="h-6 w-6 fill-primary/10 stroke-[0.8] text-theme-1"></i>
+                                            <div class="ml-3.5">
+                                                <a class="whitespace-nowrap font-medium" href="#">
+                                                    {{$data['invoice_number']}}
+                                                </a>
+                                                <div class="mt-1 whitespace-nowrap text-xs text-slate-500">
+                                                    {{$data['invoice_type']}} Order
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr data-tw-merge="" class="">
-                                <td data-tw-merge=""
-                                    class="px-5 py-3 border-[1px] border-slate-300 box rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
-                                    <div class="flex items-center">
-                                        <i data-tw-merge="" data-lucide="trending-up"
-                                           class="h-6 w-6 fill-primary/10 stroke-[0.8] text-theme-1"></i>
-                                        <div class="ml-3.5">
-                                            <a class="whitespace-nowrap font-medium" href="#">
-                                                IVR/20240301/IX/VII/2645514417
-                                            </a>
-                                            <div class="mt-1 whitespace-nowrap text-xs text-slate-500">
-                                                Sales Order
+                                    </td>
+                                    <td data-tw-merge=""
+                                        class="px-5 py-3 border-[1px] border-slate-300 box w-60 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
+                                        <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
+                                            Customer Name
+                                        </div>
+                                        <a class="flex items-center text-primary" href="#">
+                                            <i data-tw-merge="" data-lucide="user" class="h-3.5 w-3.5 stroke-[1.7]"></i>
+                                            <div class="ml-1.5 whitespace-nowrap">
+                                                {{$data['customer_name']}}
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td data-tw-merge=""
+                                        class="px-5 py-3 border-[1px] border-slate-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
+                                        <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
+                                            Type
+                                        </div>
+                                        <div class="flex items-center text-{{$data['invoice_type']=='Sales'?'success':'danger'}}">
+                                            <i data-tw-merge="" data-lucide="package-search"
+                                               class="h-3.5 w-3.5 stroke-[1.7]"></i>
+                                            <div class="ml-1.5 whitespace-nowrap">
+                                                To {{$data['invoice_type']=='Sales'?'Receive':'Pay'}}
                                             </div>
                                         </div>
-                                    </div>
-                                </td>
-                                <td data-tw-merge=""
-                                    class="px-5 py-3 border-[1px] border-slate-300 box w-60 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
-                                    <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
-                                        Customer Name
-                                    </div>
-                                    <a class="flex items-center text-primary" href="#">
-                                        <i data-tw-merge="" data-lucide="user" class="h-3.5 w-3.5 stroke-[1.7]"></i>
-                                        <div class="ml-1.5 whitespace-nowrap">
-                                            Leonardo DiCaprio
+                                    </td>
+                                    <td data-tw-merge=""
+                                        class="px-5 py-3 border-[1px] border-slate-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
+                                        <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
+                                            Date
                                         </div>
-                                    </a>
-                                </td>
-                                <td data-tw-merge=""
-                                    class="px-5 py-3 border-[1px] border-slate-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
-                                    <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
-                                        Type
-                                    </div>
-                                    <div class="flex items-center text-success">
-                                        <i data-tw-merge="" data-lucide="package-search"
-                                           class="h-3.5 w-3.5 stroke-[1.7]"></i>
-                                        <div class="ml-1.5 whitespace-nowrap">
-                                            To Receive
-                                        </div>
-                                    </div>
-                                </td>
-                                <td data-tw-merge=""
-                                    class="px-5 py-3 border-[1px] border-slate-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
-                                    <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
-                                        Date
-                                    </div>
-                                    <div class="whitespace-nowrap">12/12/2023</div>
-                                </td>
-                                <td data-tw-merge=""
-                                    class="px-5 border-[1px] border-slate-300 box relative w-20 rounded-l-none rounded-r-none border-x-0 py-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
-                                    <div class="flex items-center justify-center">
-                                        <div data-tw-merge="" data-tw-placement="bottom-end"
-                                             class="dropdown relative h-5">
-                                            <button data-tw-toggle="dropdown" aria-expanded="false"
-                                                    class="cursor-pointer h-5 w-5 text-slate-500"><i data-tw-merge=""
-                                                                                                     data-lucide="more-vertical"
-                                                                                                     class="stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"></i>
-                                            </button>
-                                            <div data-transition="" data-selector=".show"
-                                                 data-enter="transition-all ease-linear duration-150"
-                                                 data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                 data-enter-to="!mt-1 visible opacity-100 translate-y-0"
-                                                 data-leave="transition-all ease-linear duration-150"
-                                                 data-leave-from="!mt-1 visible opacity-100 translate-y-0"
-                                                 data-leave-to="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                 class="dropdown-menu absolute z-[9999] hidden">
-                                                <div data-tw-merge=""
-                                                     class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                    <a class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                            data-tw-merge="" data-lucide="wallet-cards"
-                                                            class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                        View Details</a>
-                                                    <a class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                            data-tw-merge="" data-lucide="printer"
-                                                            class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                        Print Invoice</a>
+                                        <div class="whitespace-nowrap">{{$data['date']}}</div>
+                                    </td>
+                                    <td data-tw-merge=""
+                                        class="px-5 border-[1px] border-slate-300 box relative w-20 rounded-l-none rounded-r-none border-x-0 py-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
+                                        <div class="flex items-center justify-center">
+                                            <div data-tw-merge="" data-tw-placement="bottom-end"
+                                                 class="dropdown relative h-5">
+                                                <button data-tw-toggle="dropdown" aria-expanded="false"
+                                                        class="cursor-pointer h-5 w-5 text-slate-500"><i data-tw-merge=""
+                                                                                                         data-lucide="more-vertical"
+                                                                                                         class="stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"></i>
+                                                </button>
+                                                <div data-transition="" data-selector=".show"
+                                                     data-enter="transition-all ease-linear duration-150"
+                                                     data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1"
+                                                     data-enter-to="!mt-1 visible opacity-100 translate-y-0"
+                                                     data-leave="transition-all ease-linear duration-150"
+                                                     data-leave-from="!mt-1 visible opacity-100 translate-y-0"
+                                                     data-leave-to="absolute !mt-5 invisible opacity-0 translate-y-1"
+                                                     class="dropdown-menu absolute z-[9999] hidden">
+                                                    <div data-tw-merge=""
+                                                         class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
+                                                        <a class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
+                                                                data-tw-merge="" data-lucide="wallet-cards"
+                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
+                                                            View Details</a>
+                                                        <a class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
+                                                                data-tw-merge="" data-lucide="printer"
+                                                                class="stroke-[1] mr-2 h-4 w-4"></i>
+                                                            Print Invoice</a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr data-tw-merge="" class="">
-                                <td data-tw-merge=""
-                                    class="px-5 py-3 border-[1px] border-slate-300 box rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
-                                    <div class="flex items-center">
-                                        <i data-tw-merge="" data-lucide="trending-down"
-                                           class="h-6 w-6 fill-primary/10 stroke-[0.8] text-theme-1"></i>
-                                        <div class="ml-3.5">
-                                            <a class="whitespace-nowrap font-medium" href="#">
-                                                IVR/202asdhkj/9979?//HKHFS
-                                            </a>
-                                            <div class="mt-1 whitespace-nowrap text-xs text-slate-500">
+                                    </td>
+                                </tr>
+                            @endforeach
 
-                                                Purchase Order
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td data-tw-merge=""
-                                    class="px-5 py-3 border-[1px] border-slate-300 box w-60 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
-                                    <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
-                                        Vendor Name
-                                    </div>
-                                    <a class="flex items-center text-primary" href="#">
-                                        <i data-tw-merge="" data-lucide="user-check"
-                                           class="h-3.5 w-3.5 stroke-[1.7]"></i>
-                                        <div class="ml-1.5 whitespace-nowrap">
-                                            Leonardo DiCaprio
-                                        </div>
-                                    </a>
-                                </td>
-                                <td data-tw-merge=""
-                                    class="px-5 py-3 border-[1px] border-slate-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
-                                    <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
-                                        Type
-                                    </div>
-                                    <div class="flex items-center text-danger">
-                                        <i data-tw-merge="" data-lucide="package-search"
-                                           class="h-3.5 w-3.5 stroke-[1.7]"></i>
-                                        <div class="ml-1.5 whitespace-nowrap">
-                                            To pay
-                                        </div>
-                                    </div>
-                                </td>
-                                <td data-tw-merge=""
-                                    class="px-5 py-3 border-[1px] border-slate-300 box w-44 rounded-l-none rounded-r-none border-x-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
-                                    <div class="mb-1 whitespace-nowrap text-xs text-slate-500">
-                                        Date
-                                    </div>
-                                    <div class="whitespace-nowrap">24/10/2024</div>
-                                </td>
-                                <td data-tw-merge=""
-                                    class="px-5 border-[1px] border-slate-300 box relative w-20 rounded-l-none rounded-r-none border-x-0 py-0 shadow-[5px_3px_5px_#00000005] first:rounded-l-[0.6rem] first:border-l last:rounded-r-[0.6rem] last:border-r dark:bg-darkmode-600">
-                                    <div class="flex items-center justify-center">
-                                        <div data-tw-merge="" data-tw-placement="bottom-end"
-                                             class="dropdown relative h-5">
-                                            <button data-tw-toggle="dropdown" aria-expanded="false"
-                                                    class="cursor-pointer h-5 w-5 text-slate-500"><i data-tw-merge=""
-                                                                                                     data-lucide="more-vertical"
-                                                                                                     class="stroke-[1] w-5 h-5 fill-slate-400/70 stroke-slate-400/70"></i>
-                                            </button>
-                                            <div data-transition="" data-selector=".show"
-                                                 data-enter="transition-all ease-linear duration-150"
-                                                 data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                 data-enter-to="!mt-1 visible opacity-100 translate-y-0"
-                                                 data-leave="transition-all ease-linear duration-150"
-                                                 data-leave-from="!mt-1 visible opacity-100 translate-y-0"
-                                                 data-leave-to="absolute !mt-5 invisible opacity-0 translate-y-1"
-                                                 class="dropdown-menu absolute z-[9999] hidden">
-                                                <div data-tw-merge=""
-                                                     class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-40">
-                                                    <a class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                            data-tw-merge="" data-lucide="wallet-cards"
-                                                            class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                        View Details</a>
-                                                    <a class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"><i
-                                                            data-tw-merge="" data-lucide="printer"
-                                                            class="stroke-[1] mr-2 h-4 w-4"></i>
-                                                        Print Invoice</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
                             </tbody>
                         </table>
                     </div>
