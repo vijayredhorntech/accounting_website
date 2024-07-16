@@ -18,17 +18,11 @@ Route::middleware([
 
 
     Route::get('/dashboard', function () {
-
-
-
         return view('dashboard');
     })->name('dashboard');
 
 
-
-
     // customers and vendors routes
-
     Route::get('/create-customer-vendor', function () {
         return view('customers_vendors.create');
     })->name('create-customer-vendor');
@@ -46,10 +40,7 @@ Route::middleware([
     })->name('customer-vendor-details');
 
 
-
-
     // products and inventory routes
-
     Route::get('/product-group', function () {
         return view('products_inventory.product-group');
     })->name('product-group');
@@ -71,8 +62,7 @@ Route::middleware([
         })->name('godown-details');
 
 
-
-//    invoices route here
+//   sales invoices route here
     Route::get('/quotations', function () {
         return view('invoices.quotation');
     })->name('quotation');
@@ -98,10 +88,7 @@ Route::middleware([
     })->name('performa-invoice');
 
 
-
-
-
-
+//   purchase invoices route here
     Route::get('/purchase', function () {
         return view('invoices.purchase');
     })->name('purchase');
@@ -118,7 +105,6 @@ Route::middleware([
         return view('invoices.purchase-order');
     })->name('purchase-order');
 
-
     Route::get('/create-invoice/{type}', function ($type) {
         return view('invoices.create-invoice')->with('type', $type);
     })->name('create-invoice');
@@ -126,7 +112,6 @@ Route::middleware([
     Route::get('/invoice-detail/{type}', function ($type) {
         return view('invoices.invoice-detail')->with('type', $type);
     })->name('invoice-detail');
-
 
     Route::get('/payment-in', function () {
         return view('invoices.payment-in');
@@ -140,13 +125,9 @@ Route::middleware([
         return view('invoices.create-payment')->with('type', $type);
     })->name('create-payment');
 
-
     Route::get('/invoice-payment/{type}', function ($type) {
         return view('invoices.payment-detail')->with('type', $type);
     })->name('payment-detail');
-
-
-
 
 
 //    account solution routes here
@@ -166,9 +147,6 @@ Route::middleware([
     Route::get('/profile-settings', function () {
         return view('profile.index');
     })->name('profile-settings');
-
-
-
 
 
 });
